@@ -39,22 +39,22 @@ The project does not use a separate backend application or database.
 
 ## 2. Main Technology Decisions
 
-| Concern | Decision |
-|---|---|
-| Framework | Next.js App Router |
-| Language | TypeScript |
-| Styling | Tailwind CSS |
-| Static data source | JSON files in `src/data` |
-| Internal data access | Next.js Route Handlers |
-| Client data loading | Native `fetch()` |
-| Favorites persistence | LocalStorage |
-| Profile persistence | LocalStorage |
-| Theme | `next-themes` |
-| Geolocation | Browser Geolocation API |
-| Distance calculation | Local Haversine utility |
-| Weather | Open-Meteo through a Next.js API route |
-| Maps | Google Maps URL deep links |
-| Hosting | Vercel |
+| Concern               | Decision                               |
+| --------------------- | -------------------------------------- |
+| Framework             | Next.js App Router                     |
+| Language              | TypeScript                             |
+| Styling               | Tailwind CSS                           |
+| Static data source    | JSON files in `src/data`               |
+| Internal data access  | Next.js Route Handlers                 |
+| Client data loading   | Native `fetch()`                       |
+| Favorites persistence | LocalStorage                           |
+| Profile persistence   | LocalStorage                           |
+| Theme                 | `next-themes`                          |
+| Geolocation           | Browser Geolocation API                |
+| Distance calculation  | Local Haversine utility                |
+| Weather               | Open-Meteo through a Next.js API route |
+| Maps                  | Google Maps URL deep links             |
+| Hosting               | Vercel                                 |
 
 Avoid adding dependencies when a small native implementation is sufficient.
 
@@ -304,13 +304,13 @@ Minimum metadata:
 
 Recommended titles:
 
-| Route | Title |
-|---|---|
-| `/` | `Explore Sri Lanka | Lanka Explorer` |
-| `/attractions/[id]` | `Attraction Details | Lanka Explorer` |
-| `/favorites` | `Favorites | Lanka Explorer` |
-| `/nearby` | `Nearby Attractions | Lanka Explorer` |
-| `/profile` | `Profile & Preferences | Lanka Explorer` |
+| Route               | Title                  |
+| ------------------- | ---------------------- | --------------- |
+| `/`                 | `Explore Sri Lanka     | Lanka Explorer` |
+| `/attractions/[id]` | `Attraction Details    | Lanka Explorer` |
+| `/favorites`        | `Favorites             | Lanka Explorer` |
+| `/nearby`           | `Nearby Attractions    | Lanka Explorer` |
+| `/profile`          | `Profile & Preferences | Lanka Explorer` |
 
 The dynamic detail route may initially use generic static metadata. Dynamic metadata is optional and should not introduce complicated self-fetching or duplicate data access.
 
@@ -708,10 +708,7 @@ lanka-explorer-favorites
 Store attraction IDs only:
 
 ```json
-[
-  "sigiriya-rock-fortress",
-  "galle-fort"
-]
+["sigiriya-rock-fortress", "galle-fort"]
 ```
 
 Do not store full attraction objects because:

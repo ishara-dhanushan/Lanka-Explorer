@@ -10,15 +10,15 @@ Technical architecture is described in [`ARCHITECTURE.md`](./ARCHITECTURE.md). D
 
 ## 1. Project Identity
 
-| Item | Value |
-|---|---|
-| Application name | **Lanka Explorer** |
-| Repository name | `lanka-explorer` |
-| Application type | Mobile-first responsive travel guide web application |
-| Academic module | SENG 41293 — Mobile Web Application Development |
-| Selected assignment track | Track B — Local Tour & Travel Web Guide |
-| Institution | University of Kelaniya |
-| Primary deployment target | Vercel |
+| Item                         | Value                                                             |
+| ---------------------------- | ----------------------------------------------------------------- |
+| Application name             | **Lanka Explorer**                                                |
+| Repository name              | `lanka-explorer`                                                  |
+| Application type             | Mobile-first responsive travel guide web application              |
+| Academic module              | SENG 41293 — Mobile Web Application Development                   |
+| Selected assignment track    | Track B — Local Tour & Travel Web Guide                           |
+| Institution                  | University of Kelaniya                                            |
+| Primary deployment target    | Vercel                                                            |
 | Primary implementation style | Frontend-focused Next.js application with thin Next.js API routes |
 
 The product name must always be written as **Lanka Explorer**. Do not introduce alternative application names, aliases, old names, or repository branding in visible application content.
@@ -489,17 +489,17 @@ Runtime data is not part of static JSON:
 
 ## 13. Data Persistence Boundaries
 
-| Data | Storage |
-|---|---|
-| Attractions | JSON file, exposed through API route |
-| Categories | JSON file, exposed through API route |
-| Current weather | External Open-Meteo data, normalized by API route |
-| Current location | In-memory browser state |
-| Favorite IDs | LocalStorage |
-| Display name | LocalStorage |
-| Preferred distance unit | LocalStorage |
-| Light/dark theme | `next-themes` persistence |
-| Search/filter state | In-memory route state |
+| Data                    | Storage                                           |
+| ----------------------- | ------------------------------------------------- |
+| Attractions             | JSON file, exposed through API route              |
+| Categories              | JSON file, exposed through API route              |
+| Current weather         | External Open-Meteo data, normalized by API route |
+| Current location        | In-memory browser state                           |
+| Favorite IDs            | LocalStorage                                      |
+| Display name            | LocalStorage                                      |
+| Preferred distance unit | LocalStorage                                      |
+| Light/dark theme        | `next-themes` persistence                         |
+| Search/filter state     | In-memory route state                             |
 
 No private or sensitive data is collected.
 
