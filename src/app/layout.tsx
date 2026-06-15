@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+// src/app/layout.tsx
+import type { Metadata, Viewport } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/contexts/ThemeContext";
+import { AppProviders } from "@/components/providers/AppProviders";
 import { AppShell } from "@/components/layout/AppShell";
 
 const montserrat = Montserrat({
@@ -27,6 +28,13 @@ export const metadata: Metadata = {
     "Discover the best attractions, nature spots, and heritage sites across Sri Lanka.",
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,11 +46,11 @@ export default function RootLayout({
       className={`${montserrat.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-surface-container-low text-ink">
-        <ThemeProvider>
+        <AppProviders>
           <div className="mx-auto w-full max-w-md bg-surface min-h-screen shadow-2xl flex flex-col relative">
             <AppShell>{children}</AppShell>
           </div>
-        </ThemeProvider>
+        </AppProviders>
       </body>
     </html>
   );

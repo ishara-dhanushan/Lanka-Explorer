@@ -153,10 +153,7 @@ Establish the required asynchronous data architecture.
 ### 2.5 Client helpers/hooks
 
 - [ ] Implement typed API helpers.
-- [ ] Implement `useAttractions`.
-- [ ] Implement `useAttraction`.
-- [ ] Implement `useCategories`.
-- [ ] Handle abort on unmount.
+- [ ] Implement `useWeather`.
 
 ## Validation
 
