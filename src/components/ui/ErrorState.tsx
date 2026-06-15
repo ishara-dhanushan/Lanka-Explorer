@@ -1,5 +1,4 @@
 // src/components/ui/ErrorState.tsx
-
 import { Button } from "./Button";
 
 export type ErrorStateProps = {

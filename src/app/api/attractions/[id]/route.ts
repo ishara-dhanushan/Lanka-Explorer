@@ -1,7 +1,8 @@
+// src/app/api/attractions/[id]/route.ts
 import { NextResponse } from "next/server";
-import type { Attraction } from "@/types/attraction";
-import type { ApiResponse } from "@/types/api";
-import rawData from "@/data/attractions.json";
+import type { Attraction } from "@typings/attraction";
+import type { ApiResponse } from "@typings/api";
+import rawData from "@data/attractions.json";
 
 const attractionsData = rawData as Attraction[];
 
