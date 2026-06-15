@@ -1,0 +1,5 @@
+[
+  { "id": "nature", "label": "Nature" },
+  { "id": "historical", "label": "Historical" },
+  { "id": "hotels", "label": "Hotels" }
+]
