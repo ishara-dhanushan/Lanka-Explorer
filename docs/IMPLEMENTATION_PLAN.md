@@ -70,12 +70,11 @@ Build the reusable visual foundation based on the the approved design branding a
 
 ### 1.2 Theme
 
-- [ ] Install `next-themes`.
-- [ ] Add ThemeProvider.
-- [ ] Configure class-based Light/Dark switching.
-- [ ] Disable the System option.
-- [ ] Add `suppressHydrationWarning` correctly.
-- [ ] Confirm no hydration warning appears.
+- [ ] Create `ThemeContext` (`src/contexts/ThemeContext.tsx`).
+- [ ] Add `ThemeProvider` to root layout.
+- [ ] Configure class-based Light/Dark switching (`.dark` on `<html>`).
+- [ ] Support `light`, `dark`, and `system` modes.
+- [ ] Persist theme in `localStorage` under key `"theme"`.
 
 ### 1.3 Shared shell
 
@@ -410,7 +409,7 @@ Complete local preferences, client-side validation, and user-visible theme selec
 ### 7.4 Theme setting
 
 - [ ] Add Light/Dark setting.
-- [ ] Connect to next-themes.
+- [ ] Connect to `useTheme()` from `ThemeContext`.
 - [ ] Prevent incorrect hydration UI.
 - [ ] Verify every route in both modes.
 

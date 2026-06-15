@@ -110,7 +110,7 @@ The application must use browser storage to persist user-specific local data, in
 - Local profile preferences.
 - Preferred distance unit.
 
-Theme persistence is handled by the theme library.
+Theme persistence is handled by `ThemeContext` via `localStorage`.
 
 ### 3.5 Browser Web API integration
 
@@ -498,7 +498,7 @@ Runtime data is not part of static JSON:
 | Favorite IDs            | LocalStorage                                      |
 | Display name            | LocalStorage                                      |
 | Preferred distance unit | LocalStorage                                      |
-| Light/dark theme        | `next-themes` persistence                         |
+| Light/dark theme        | `ThemeContext` — `localStorage` persistence       |
 | Search/filter state     | In-memory route state                             |
 
 No private or sensitive data is collected.
@@ -512,15 +512,14 @@ Lanka Explorer must support:
 - Light mode.
 - Dark mode.
 
-The implementation should use `next-themes`.
+The implementation uses a custom `ThemeContext` (`src/contexts/ThemeContext.tsx`).
 
 Required behavior:
 
 - The theme can be changed from Profile.
-- The default may be Light.
-- System theme selection is not required.
-- `enableSystem` should remain disabled unless the scope is intentionally changed.
-- Theme persistence is handled by the theme library.
+- The default resolves from system preference on first visit.
+- Supports `light`, `dark`, and `system` modes.
+- Theme persistence is handled by `ThemeContext` via `localStorage`.
 - The theme control must avoid hydration mismatch.
 - Text, cards, overlays, navigation, images, borders, inputs, status messages, and empty states must remain readable in both themes.
 - Dark mode must use designed semantic tokens rather than simply inverting colors.

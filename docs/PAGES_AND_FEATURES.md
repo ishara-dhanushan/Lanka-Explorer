@@ -1117,7 +1117,7 @@ lanka-explorer-favorites
 lanka-explorer-profile
 ```
 
-Theme storage is controlled by `next-themes`.
+Theme storage is controlled by `ThemeContext` via `localStorage` (key: `"theme"`).
 
 ## 10.2 Required safeguards
 

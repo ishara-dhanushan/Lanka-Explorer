@@ -29,7 +29,7 @@ Browser-specific capabilities are handled in Client Components and hooks:
 ```text
 LocalStorage     → favorites and profile preferences
 Geolocation API  → current coordinates
-next-themes      → light/dark theme
+ThemeContext     → light/dark theme
 Google Maps URL  → external navigation
 ```
 
@@ -49,7 +49,7 @@ The project does not use a separate backend application or database.
 | Client data loading   | Native `fetch()`                       |
 | Favorites persistence | LocalStorage                           |
 | Profile persistence   | LocalStorage                           |
-| Theme                 | `next-themes`                          |
+| Theme                 | Custom `ThemeContext`                  |
 | Geolocation           | Browser Geolocation API                |
 | Distance calculation  | Local Haversine utility                |
 | Weather               | Open-Meteo through a Next.js API route |
@@ -136,8 +136,7 @@ lanka-explorer/
 │   │   │
 │   │   ├── providers/
 │   │   │   ├── AppProviders.tsx
-│   │   │   ├── FavoritesProvider.tsx
-│   │   │   └── ThemeProvider.tsx
+│   │   │   └── FavoritesProvider.tsx
 │   │   │
 │   │   ├── shared/
 │   │   │   ├── AttractionCard.tsx
@@ -156,6 +155,9 @@ lanka-explorer/
 │   │       ├── LoadingState.tsx
 │   │       ├── Skeleton.tsx
 │   │       └── StatusCard.tsx
+│   │
+│   ├── contexts/
+│   │   └── ThemeContext.tsx
 │   │
 │   ├── data/
 │   │   ├── attractions.json
@@ -369,16 +371,17 @@ It should not contain route UI.
 
 ### 8.2 ThemeProvider
 
-Wrap `next-themes`.
+Use the custom `ThemeContext` from `src/contexts/ThemeContext.tsx`.
 
-Required configuration:
+Behavior:
 
-- Class-based theme switching.
+- Class-based theme switching (adds `.dark` to `<html>`).
 - Light default.
-- System theme disabled unless later approved.
-- Persistence handled by `next-themes`.
+- System theme supported via `"system"` mode.
+- Theme persisted in `localStorage` under the key `"theme"`.
+- Exposes `theme`, `resolvedTheme`, and `setTheme` via `useTheme()` hook.
 
-The root `<html>` element should use `suppressHydrationWarning` because the theme class is determined on the client.
+The root `<html>` element uses `suppressHydrationWarning` because the theme class is determined on the client.
 
 ### 8.3 FavoritesProvider
 
@@ -781,13 +784,13 @@ Use one validated object rather than several unrelated storage keys.
 
 ### 16.2 Library
 
-Use `next-themes`.
+Use the custom `ThemeContext` (`src/contexts/ThemeContext.tsx`).
 
-Suggested provider behavior:
+Behavior:
 
-- `attribute="class"`
-- `defaultTheme="light"`
-- `enableSystem={false}`
+- `resolvedTheme` drives a `.dark` class on `<html>`.
+- Default resolves to system preference on first visit.
+- Persisted in `localStorage` as `"theme"`.
 
 ### 16.3 Theme control
 
@@ -1226,7 +1229,7 @@ If fetch caching behavior becomes relevant, document it clearly rather than rely
 - [ ] Favorites store IDs only.
 - [ ] Geolocation is isolated in a Client hook.
 - [ ] Weather is loaded only when needed.
-- [ ] Theme uses `next-themes` with light and dark modes.
+- [ ] Theme uses custom `ThemeContext` with light and dark modes.
 - [ ] No dynamic imports are used.
 - [ ] No database or separate backend exists.
 - [ ] Errors, empty states, and loading states are implemented.
