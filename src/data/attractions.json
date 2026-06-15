@@ -1,0 +1,587 @@
+[
+  {
+    "id": "sigiriya-rock-fortress",
+    "name": "Sigiriya Rock Fortress",
+    "category": "historical",
+    "shortDescription": "An ancient UNESCO-listed rock fortress rising 200 metres above the Central Province jungle.",
+    "description": "Sigiriya is one of the best-preserved examples of ancient urban planning in South Asia. Built by King Kashyapa in the 5th century AD, the site features a sprawling palace complex on a sheer volcanic rock, famous frescoes of celestial maidens painted onto the rock face, elaborate water gardens, and lion-paw stone carvings at the base of the summit stairway. Declared a UNESCO World Heritage Site in 1982, it consistently ranks among the most visited and photographed sites in Asia.",
+    "location": {
+      "name": "Sigiriya",
+      "district": "Matale",
+      "province": "Central Province",
+      "country": "Sri Lanka",
+      "latitude": 7.957,
+      "longitude": 80.7603
+    },
+    "images": {
+      "card": "/images/attractions/sigiriya-card.jpg",
+      "hero": "/images/attractions/sigiriya-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "7:00 AM – 5:30 PM",
+    "recommendedDuration": "3 – 4 hours",
+    "featured": true
+  },
+  {
+    "id": "temple-of-the-tooth",
+    "name": "Temple of the Sacred Tooth Relic",
+    "category": "historical",
+    "shortDescription": "Sri Lanka's most sacred Buddhist temple, housing a relic of the Buddha in the royal palace complex of Kandy.",
+    "description": "The Sri Dalada Maligawa, or Temple of the Tooth, is the most venerated Buddhist shrine in Sri Lanka. It holds the sacred relic of the left canine tooth of the Buddha, which has been the object of pilgrimage and royal procession for centuries. The temple is set within the former royal palace complex of the Kingdom of Kandy and forms the cultural heart of the city. The annual Esala Perahera festival, held in July or August, draws hundreds of thousands of devotees and travellers with elaborately decorated elephants and traditional dancers.",
+    "location": {
+      "name": "Kandy",
+      "district": "Kandy",
+      "province": "Central Province",
+      "country": "Sri Lanka",
+      "latitude": 7.2936,
+      "longitude": 80.6413
+    },
+    "images": {
+      "card": "/images/attractions/temple-tooth-card.jpg",
+      "hero": "/images/attractions/temple-tooth-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "6:00 AM – 8:00 PM",
+    "recommendedDuration": "1 – 2 hours",
+    "featured": true
+  },
+  {
+    "id": "galle-fort",
+    "name": "Galle Fort",
+    "category": "historical",
+    "shortDescription": "A 16th-century coastal fortified city built by the Portuguese and later expanded by the Dutch, now a UNESCO World Heritage Site.",
+    "description": "Galle Fort is the largest remaining fortress in Asia built by a European colonial power. Originally constructed by the Portuguese in 1588 and massively expanded by the Dutch in the 17th century, the fort houses an extraordinary mix of European and South Asian architectural styles within its thick granite walls. Inside the ramparts visitors find Dutch Reformed churches, colonial mansions, a lighthouse, and a vibrant collection of boutique hotels, galleries, and cafes. The sea-facing rampart walk at sunset is one of the signature experiences of Sri Lanka.",
+    "location": {
+      "name": "Galle",
+      "district": "Galle",
+      "province": "Southern Province",
+      "country": "Sri Lanka",
+      "latitude": 6.0269,
+      "longitude": 80.217
+    },
+    "images": {
+      "card": "/images/attractions/galle-fort-card.jpg",
+      "hero": "/images/attractions/galle-fort-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "Open 24 hours",
+    "recommendedDuration": "2 – 3 hours",
+    "featured": true
+  },
+  {
+    "id": "dambulla-cave-temple",
+    "name": "Dambulla Royal Cave Temple",
+    "category": "historical",
+    "shortDescription": "A UNESCO-listed complex of five cave sanctuaries containing over 150 Buddhist statues and ancient frescoes.",
+    "description": "The Dambulla Royal Cave Temple, also known as the Golden Temple of Dambulla, is the largest and best-preserved cave temple complex in Sri Lanka. Dating back to the 1st century BC, its five sanctuaries house 153 statues of the Buddha, 3 statues of Sri Lankan kings, and 4 statues of Hindu gods. The walls and ceilings are covered in vivid frescoes spanning 2,100 square metres. The hilltop setting provides sweeping views across the flat plains of the North Central Province and towards the distant silhouette of Sigiriya Rock.",
+    "location": {
+      "name": "Dambulla",
+      "district": "Matale",
+      "province": "Central Province",
+      "country": "Sri Lanka",
+      "latitude": 7.8567,
+      "longitude": 80.6492
+    },
+    "images": {
+      "card": "/images/attractions/dambulla-card.jpg",
+      "hero": "/images/attractions/dambulla-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "7:30 AM – 5:30 PM",
+    "recommendedDuration": "2 – 3 hours",
+    "featured": false
+  },
+  {
+    "id": "polonnaruwa-ancient-city",
+    "name": "Polonnaruwa Ancient City",
+    "category": "historical",
+    "shortDescription": "A UNESCO World Heritage city and the medieval capital of Sri Lanka, filled with well-preserved ruins of palaces and temples.",
+    "description": "Polonnaruwa served as the second capital of ancient Sri Lanka from the 11th to the 13th century. The UNESCO-listed site contains an extraordinary concentration of royal palaces, dagobas, irrigation tanks, and Buddhist shrines. The Gal Vihara rock temple — four colossal Buddha statues carved directly into a single granite face — is considered the pinnacle of Sinhalese rock-carving artistry. The site is best explored by bicycle on the flat, shaded paths that connect its major monuments.",
+    "location": {
+      "name": "Polonnaruwa",
+      "district": "Polonnaruwa",
+      "province": "North Central Province",
+      "country": "Sri Lanka",
+      "latitude": 7.9403,
+      "longitude": 81.0188
+    },
+    "images": {
+      "card": "/images/attractions/polonnaruwa-card.jpg",
+      "hero": "/images/attractions/polonnaruwa-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "7:00 AM – 6:00 PM",
+    "recommendedDuration": "4 – 5 hours",
+    "featured": false
+  },
+  {
+    "id": "anuradhapura-sacred-city",
+    "name": "Anuradhapura Sacred City",
+    "category": "historical",
+    "shortDescription": "Sri Lanka's first ancient capital, a UNESCO World Heritage Site spanning over 40 square kilometres of Buddhist monuments.",
+    "description": "Anuradhapura was the first established kingdom of ancient Sri Lanka, flourishing for over 1,300 years from the 4th century BC. The site contains some of the oldest and largest brick structures in the world, including the Jetavanaramaya Dagoba — once the third-tallest structure on earth. The sacred Bo-Tree (Sri Maha Bodhi), grown from a cutting of the tree under which the Buddha attained enlightenment, has been tended continuously since 288 BC and is the oldest historically authenticated tree in the world. The vast site is best explored by tuk-tuk or bicycle.",
+    "location": {
+      "name": "Anuradhapura",
+      "district": "Anuradhapura",
+      "province": "North Central Province",
+      "country": "Sri Lanka",
+      "latitude": 8.3114,
+      "longitude": 80.4037
+    },
+    "images": {
+      "card": "/images/attractions/anuradhapura-card.jpg",
+      "hero": "/images/attractions/anuradhapura-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "Open 24 hours (museums close at 6:00 PM)",
+    "recommendedDuration": "5 – 6 hours",
+    "featured": false
+  },
+  {
+    "id": "nine-arches-bridge-ella",
+    "name": "Nine Arches Bridge",
+    "category": "nature",
+    "shortDescription": "An iconic colonial-era railway viaduct framed by lush tea plantations in the Sri Lanka hill country.",
+    "description": "The Nine Arches Bridge, also called the Bridge in the Sky, is a 91-metre viaduct near Ella built entirely from stone, brick, and cement without any steel during World War I. The bridge is set within dense jungle and tea estate scenery at an elevation of approximately 1,000 metres. The best views are from the surrounding forested hillsides, which can be reached on short walking trails. Timing a visit to coincide with a passing train transforms the scene into one of the most photographed moments in Sri Lanka travel photography.",
+    "location": {
+      "name": "Ella",
+      "district": "Badulla",
+      "province": "Uva Province",
+      "country": "Sri Lanka",
+      "latitude": 6.8796,
+      "longitude": 81.056
+    },
+    "images": {
+      "card": "/images/attractions/nine-arches-card.jpg",
+      "hero": "/images/attractions/nine-arches-hero.jpg",
+      "gallery": []
+    },
+    "recommendedDuration": "1 – 2 hours",
+    "featured": true
+  },
+  {
+    "id": "horton-plains-worlds-end",
+    "name": "Horton Plains & World's End",
+    "category": "nature",
+    "shortDescription": "A misty plateau National Park with cloud-forest trails ending at a dramatic 870-metre cliff called World's End.",
+    "description": "Horton Plains National Park is a UNESCO World Heritage Site sitting at approximately 2,100 metres above sea level in the Central Highlands. The park's most famous feature is World's End, a sheer precipice that drops almost 870 metres. On clear mornings, the view extends from the escarpment all the way to the southern coast. The 9.5-kilometre circular trail also passes Baker's Falls, a beautiful 20-metre waterfall. The plateau is home to endemic species including the sambar deer and purple-faced langur. Clouds typically roll in by late morning, so an early start is essential.",
+    "location": {
+      "name": "Horton Plains",
+      "district": "Nuwara Eliya",
+      "province": "Central Province",
+      "country": "Sri Lanka",
+      "latitude": 6.802,
+      "longitude": 80.807
+    },
+    "images": {
+      "card": "/images/attractions/horton-plains-card.jpg",
+      "hero": "/images/attractions/horton-plains-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "6:00 AM – 6:00 PM",
+    "recommendedDuration": "3 – 4 hours",
+    "featured": false
+  },
+  {
+    "id": "adams-peak",
+    "name": "Adam's Peak (Sri Pada)",
+    "category": "nature",
+    "shortDescription": "A sacred conical mountain revered by four religions, climbed by thousands of pilgrims each season for the famous summit sunrise.",
+    "description": "Adam's Peak, locally called Sri Pada or Sri Paadaya, is a 2,243-metre conical mountain in the Sabaragamuwa highlands. Its summit bears a rock formation revered as the footprint of the Buddha by Buddhists, Shiva by Hindus, Adam by Muslims, and St Thomas by Christians. The pilgrimage season runs from December to May, when tea-house stations and strings of lights illuminate the steep 7-kilometre stairway trail throughout the night. The sunrise from the summit — and the perfectly conical shadow the mountain casts over the western plains — is one of the most memorable natural spectacles in Sri Lanka.",
+    "location": {
+      "name": "Ratnapura",
+      "district": "Ratnapura",
+      "province": "Sabaragamuwa Province",
+      "country": "Sri Lanka",
+      "latitude": 6.8096,
+      "longitude": 80.4994
+    },
+    "images": {
+      "card": "/images/attractions/adams-peak-card.jpg",
+      "hero": "/images/attractions/adams-peak-hero.jpg",
+      "gallery": []
+    },
+    "recommendedDuration": "6 – 8 hours (overnight climb)",
+    "featured": true
+  },
+  {
+    "id": "yala-national-park",
+    "name": "Yala National Park",
+    "category": "nature",
+    "shortDescription": "Sri Lanka's most famous wildlife reserve, home to the world's highest density of leopards per square kilometre.",
+    "description": "Yala National Park is the most visited national park in Sri Lanka and one of the premier wildlife destinations in Asia. Covering 978 square kilometres of scrub, forest, and lagoons on the south-eastern coast, Yala is renowned for its exceptional leopard-sighting rates — Block 1 is considered to have the highest concentration of wild leopards on earth. The park also supports large populations of Asian elephants, sloth bears, crocodiles, water buffalo, and an astonishing 215 bird species. Morning and evening game drives by jeep offer dramatically different wildlife activity. The combination of accessible wildlife, dramatic coastal scenery, and ancient ruins within the park boundaries makes Yala a uniquely varied destination.",
+    "location": {
+      "name": "Yala",
+      "district": "Hambantota",
+      "province": "Southern Province",
+      "country": "Sri Lanka",
+      "latitude": 6.3728,
+      "longitude": 81.5233
+    },
+    "images": {
+      "card": "/images/attractions/yala-card.jpg",
+      "hero": "/images/attractions/yala-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "6:00 AM – 6:00 PM",
+    "recommendedDuration": "3 – 4 hours per safari",
+    "featured": true
+  },
+  {
+    "id": "udawalawe-national-park",
+    "name": "Udawalawe National Park",
+    "category": "nature",
+    "shortDescription": "A scenic park on the border of the Southern and Uva provinces guaranteeing large wild elephant herds on every visit.",
+    "description": "Udawalawe National Park is widely considered the best place in Sri Lanka — and arguably Asia — for reliable close-range elephant viewing. The park, created in 1972 to provide a sanctuary for animals displaced by the Udawalawe Reservoir, now hosts a resident population of approximately 700 wild elephants. Unlike many Asian parks, elephants are almost guaranteed to be seen on every jeep safari. The open grasslands and reservoir shores make sightings particularly clear. The park also contains large buffalo herds, axe deer, sambar, crocodiles, and hundreds of resident and migratory bird species. The Elephant Transit Home near the park entrance rescues and rehabilitates orphaned calves before releasing them into the wild.",
+    "location": {
+      "name": "Udawalawe",
+      "district": "Monaragala",
+      "province": "Uva Province",
+      "country": "Sri Lanka",
+      "latitude": 6.4737,
+      "longitude": 80.8997
+    },
+    "images": {
+      "card": "/images/attractions/udawalawe-card.jpg",
+      "hero": "/images/attractions/udawalawe-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "6:00 AM – 6:00 PM",
+    "recommendedDuration": "3 hours per safari",
+    "featured": false
+  },
+  {
+    "id": "minneriya-national-park",
+    "name": "Minneriya National Park",
+    "category": "nature",
+    "shortDescription": "Home to 'The Gathering' — one of the largest wild elephant gatherings on earth, occurring around a historic irrigation tank.",
+    "description": "Minneriya National Park is famous for hosting 'The Gathering', an annual natural spectacle that draws up to 300 wild elephants to the shores of the ancient Minneriya Tank from July to October. As the dry season reduces the water level, the exposed grassy lake bed becomes a vast feeding ground that supports the largest concentration of Asian elephants ever recorded in a single location. The park's 8,889-hectare forest and wetland habitat also supports leopards, sloth bears, spotted deer, and over 160 bird species. A jeep safari timed to The Gathering is widely regarded as one of the planet's top wildlife experiences.",
+    "location": {
+      "name": "Minneriya",
+      "district": "Polonnaruwa",
+      "province": "North Central Province",
+      "country": "Sri Lanka",
+      "latitude": 8.027,
+      "longitude": 80.899
+    },
+    "images": {
+      "card": "/images/attractions/minneriya-card.jpg",
+      "hero": "/images/attractions/minneriya-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "6:00 AM – 6:00 PM",
+    "recommendedDuration": "2 – 3 hours per safari",
+    "featured": false
+  },
+  {
+    "id": "mirissa-beach",
+    "name": "Mirissa Beach",
+    "category": "nature",
+    "shortDescription": "A crescent-shaped golden beach renowned for whale watching, sea turtles, and the legendary Parrot Rock sunset point.",
+    "description": "Mirissa is one of the most beautiful beaches on the southern coast of Sri Lanka, drawing travellers with its calm turquoise water, golden sand, and relaxed atmosphere. The bay is framed by a small jungle-covered headland called Parrot Rock, which can be accessed at low tide and provides a panoramic view of the coastline. Mirissa is the premier whale-watching destination in Asia, with blue whale and sperm whale sightings common from November to April. Sea turtles nest and feed along the shoreline throughout the year. The main beach strip has a wide choice of seafood restaurants and beach bars.",
+    "location": {
+      "name": "Mirissa",
+      "district": "Matara",
+      "province": "Southern Province",
+      "country": "Sri Lanka",
+      "latitude": 5.9487,
+      "longitude": 80.4711
+    },
+    "images": {
+      "card": "/images/attractions/mirissa-card.jpg",
+      "hero": "/images/attractions/mirissa-hero.jpg",
+      "gallery": []
+    },
+    "recommendedDuration": "Half to full day",
+    "featured": true
+  },
+  {
+    "id": "unawatuna-beach",
+    "name": "Unawatuna Beach",
+    "category": "nature",
+    "shortDescription": "A sheltered horseshoe bay near Galle with calm shallow water, coral reefs, and a leafy beachside promenade.",
+    "description": "Unawatuna is one of the most popular beach destinations on Sri Lanka's southern coast, located just 6 kilometres east of Galle Fort. The horseshoe-shaped bay is sheltered by a rocky headland, creating naturally calm and shallow water that is ideal for swimming. The coral reef just offshore is popular for snorkelling and diving with colourful reef fish, sea turtles, and in season, reef sharks. A relaxed promenade of restaurants, guest houses, and surf shops lines the back of the beach. Combining a visit to Unawatuna with the nearby Galle Fort is one of the most rewarding day itineraries in southern Sri Lanka.",
+    "location": {
+      "name": "Unawatuna",
+      "district": "Galle",
+      "province": "Southern Province",
+      "country": "Sri Lanka",
+      "latitude": 6.0108,
+      "longitude": 80.2491
+    },
+    "images": {
+      "card": "/images/attractions/unawatuna-card.jpg",
+      "hero": "/images/attractions/unawatuna-hero.jpg",
+      "gallery": []
+    },
+    "recommendedDuration": "Half to full day",
+    "featured": false
+  },
+  {
+    "id": "arugam-bay",
+    "name": "Arugam Bay",
+    "category": "nature",
+    "shortDescription": "Sri Lanka's surf capital on the east coast, offering world-class point breaks and a laid-back beach town atmosphere.",
+    "description": "Arugam Bay is a small coastal town on the far eastern shore of Sri Lanka and is internationally recognised as one of the top 10 surfing destinations in the world. The Main Point break at the southern end of the bay produces long, fast, consistent right-handers that attract advanced surfers from around the globe from May to October. Beyond surfing, the area offers access to the Kumana National Park for wildlife safaris, deserted lagoons, and some of the least-crowded beaches in the country. The town's low-key atmosphere, fresh seafood, and friendly local culture make it a firm favourite with independent travellers.",
+    "location": {
+      "name": "Arugam Bay",
+      "district": "Ampara",
+      "province": "Eastern Province",
+      "country": "Sri Lanka",
+      "latitude": 6.8395,
+      "longitude": 81.835
+    },
+    "images": {
+      "card": "/images/attractions/arugam-bay-card.jpg",
+      "hero": "/images/attractions/arugam-bay-hero.jpg",
+      "gallery": []
+    },
+    "recommendedDuration": "1 – 3 days",
+    "featured": false
+  },
+  {
+    "id": "hikkaduwa-coral-reef",
+    "name": "Hikkaduwa Beach & Coral Reef",
+    "category": "nature",
+    "shortDescription": "A lively beach town on the south coast famous for its near-shore coral sanctuary, sea turtles, and surf scene.",
+    "description": "Hikkaduwa is one of the most popular and well-developed beach resorts on Sri Lanka's southern coast. The town is built around a shallow coral reef marine sanctuary that begins just metres from the shoreline, making it one of the most accessible snorkelling destinations in the country. The sanctuary is home to sea turtles, moray eels, and a rainbow of tropical fish. The beaches adjacent to the reef are popular for surfing, and a long strip of beach bars, seafood restaurants, and guest houses provides a vibrant social atmosphere. The Hikkaduwa turtle hatchery protects nesting areas and can be visited year-round.",
+    "location": {
+      "name": "Hikkaduwa",
+      "district": "Galle",
+      "province": "Southern Province",
+      "country": "Sri Lanka",
+      "latitude": 6.1396,
+      "longitude": 80.1069
+    },
+    "images": {
+      "card": "/images/attractions/hikkaduwa-card.jpg",
+      "hero": "/images/attractions/hikkaduwa-hero.jpg",
+      "gallery": []
+    },
+    "recommendedDuration": "Half to full day",
+    "featured": false
+  },
+  {
+    "id": "pigeon-island",
+    "name": "Pigeon Island National Park",
+    "category": "nature",
+    "shortDescription": "Two small coral-fringed islands off Trincomalee offering the clearest and richest snorkelling in Sri Lanka.",
+    "description": "Pigeon Island National Park, located two kilometres off the Nilaveli coast near Trincomalee, is one of the two marine national parks in Sri Lanka and is considered to have the best snorkelling conditions in the country. The crystal-clear water and extensive hard coral gardens provide a habitat for over 300 species of reef fish, large hawksbill turtles, and — if lucky — blacktip reef sharks. The island is also an important nesting site for the rock pigeon that gives the park its name. Access is by boat from Nilaveli Beach, and swimming within the protected reef is strictly managed to preserve the coral.",
+    "location": {
+      "name": "Nilaveli, Trincomalee",
+      "district": "Trincomalee",
+      "province": "Eastern Province",
+      "country": "Sri Lanka",
+      "latitude": 8.7274,
+      "longitude": 81.2021
+    },
+    "images": {
+      "card": "/images/attractions/pigeon-island-card.jpg",
+      "hero": "/images/attractions/pigeon-island-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "6:00 AM – 6:00 PM",
+    "recommendedDuration": "3 – 4 hours",
+    "featured": false
+  },
+  {
+    "id": "royal-botanical-gardens-peradeniya",
+    "name": "Royal Botanical Gardens, Peradeniya",
+    "category": "nature",
+    "shortDescription": "A stunning 147-acre riverside botanical garden near Kandy, considered one of the finest in Asia.",
+    "description": "The Royal Botanical Gardens at Peradeniya, established in 1821 by the British colonial administration on grounds once used as a royal pleasure garden, are the largest and most visited botanical gardens in Sri Lanka. Spreading over 147 acres on a peninsula formed by a bend in the Mahaweli River, the gardens contain over 4,000 species of plants including a world-renowned orchid collection, a spectacular avenue of royal palms, a giant Javan fig tree with a 2,500-square-metre canopy, and extensive bamboo and fern collections. The gardens are a popular wedding photography location and a favourite weekend destination for Kandy residents.",
+    "location": {
+      "name": "Peradeniya, Kandy",
+      "district": "Kandy",
+      "province": "Central Province",
+      "country": "Sri Lanka",
+      "latitude": 7.2683,
+      "longitude": 80.5956
+    },
+    "images": {
+      "card": "/images/attractions/peradeniya-gardens-card.jpg",
+      "hero": "/images/attractions/peradeniya-gardens-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "7:30 AM – 5:00 PM",
+    "recommendedDuration": "2 – 3 hours",
+    "featured": false
+  },
+  {
+    "id": "bentota-beach",
+    "name": "Bentota Beach",
+    "category": "nature",
+    "shortDescription": "A long golden beach on the west coast known for calm water, water sports, and easy access from Colombo.",
+    "description": "Bentota is one of the premier beach resort towns on Sri Lanka's western coast, situated approximately 65 kilometres south of Colombo. The beach stretches for several kilometres along a sandy peninsula between the Indian Ocean and the Bentota Lagoon, creating a varied water sports landscape. The ocean side offers calm, clear water for swimming during the November-to-April dry season, while the sheltered lagoon is perfect for jet-skiing, windsurfing, water-skiing, and boat tours. The surrounding area contains several nature reserves and the famous Brief Garden, the terraced garden estate of landscape artist Bevis Bawa. Bentota is a popular day-trip destination from Colombo and Galle.",
+    "location": {
+      "name": "Bentota",
+      "district": "Galle",
+      "province": "Southern Province",
+      "country": "Sri Lanka",
+      "latitude": 6.4213,
+      "longitude": 79.996
+    },
+    "images": {
+      "card": "/images/attractions/bentota-card.jpg",
+      "hero": "/images/attractions/bentota-hero.jpg",
+      "gallery": []
+    },
+    "recommendedDuration": "Half to full day",
+    "featured": false
+  },
+  {
+    "id": "pinnawala-elephant-orphanage",
+    "name": "Pinnawala Elephant Orphanage",
+    "category": "nature",
+    "shortDescription": "A government-run sanctuary caring for orphaned and injured wild elephants, best known for its twice-daily river bath.",
+    "description": "The Pinnawala Elephant Orphanage, established in 1975 by the Sri Lanka Department of Wildlife Conservation, is home to one of the largest herds of captive elephants in the world, with over 80 residents at any given time. The orphanage rescues injured and abandoned elephants from the wild, rehabilitates them, and has successfully bred many individuals in captivity. The highlight of every visit is the river bath, which takes place twice daily when the entire herd walks to the Maha Oya River under mahout supervision to bathe and play. The orphanage is located near the town of Kegalle on the main Colombo-to-Kandy road.",
+    "location": {
+      "name": "Pinnawala, Kegalle",
+      "district": "Kegalle",
+      "province": "Sabaragamuwa Province",
+      "country": "Sri Lanka",
+      "latitude": 7.2979,
+      "longitude": 80.3523
+    },
+    "images": {
+      "card": "/images/attractions/pinnawala-card.jpg",
+      "hero": "/images/attractions/pinnawala-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "8:30 AM – 5:30 PM",
+    "recommendedDuration": "2 – 3 hours",
+    "featured": false
+  },
+  {
+    "id": "gangaramaya-temple-colombo",
+    "name": "Gangaramaya Temple",
+    "category": "historical",
+    "shortDescription": "Colombo's most important and visually striking Buddhist temple, blending Sri Lankan, Thai, Indian, and Chinese architectural styles.",
+    "description": "Gangaramaya Temple, situated beside Beira Lake in the heart of Colombo, is one of the most important and remarkable religious sites in Sri Lanka. Founded in the late 19th century, the temple complex has grown into an extraordinary eclectic collection of buildings blending Sri Lankan, Thai, Indian, and Chinese architectural influences. The temple houses a vast museum of religious artefacts, antiques, and curiosities donated by devotees from around the world, including a rare white elephant, antique cars, and thousands of Buddha statues. The Navam Perahera, held annually in February, is one of the largest pageants in Colombo.",
+    "location": {
+      "name": "Colombo 2",
+      "district": "Colombo",
+      "province": "Western Province",
+      "country": "Sri Lanka",
+      "latitude": 6.917,
+      "longitude": 79.8559
+    },
+    "images": {
+      "card": "/images/attractions/gangaramaya-card.jpg",
+      "hero": "/images/attractions/gangaramaya-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "6:00 AM – 10:00 PM",
+    "recommendedDuration": "1 – 2 hours",
+    "featured": false
+  },
+  {
+    "id": "colombo-lotus-tower",
+    "name": "Colombo Lotus Tower",
+    "category": "historical",
+    "shortDescription": "South Asia's tallest tower at 356 metres, an iconic landmark and observation deck with panoramic views of Colombo and the ocean.",
+    "description": "The Colombo Lotus Tower, inaugurated in 2019, is South Asia's tallest self-supporting structure at 356 metres and the 11th tallest freestanding telecommunications tower in the world. Shaped like a lotus flower — Sri Lanka's national flower — the tower is a symbol of modern Sri Lanka and is illuminated with changing LED colours after dark. Visitors can ascend to the enclosed observation deck at 150 metres for 360-degree views over the Colombo city skyline, Beira Lake, and the Indian Ocean. The tower complex also contains a revolving restaurant, a restaurant and café, shopping floors, and a broadcast facility.",
+    "location": {
+      "name": "Colombo 10",
+      "district": "Colombo",
+      "province": "Western Province",
+      "country": "Sri Lanka",
+      "latitude": 6.9271,
+      "longitude": 79.8612
+    },
+    "images": {
+      "card": "/images/attractions/lotus-tower-card.jpg",
+      "hero": "/images/attractions/lotus-tower-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "9:00 AM – 10:00 PM",
+    "recommendedDuration": "1 – 2 hours",
+    "featured": false
+  },
+  {
+    "id": "jaffna-fort",
+    "name": "Jaffna Fort",
+    "category": "historical",
+    "shortDescription": "A large Portuguese and Dutch colonial fort in the heart of Jaffna, one of the best-preserved fortifications in South Asia.",
+    "description": "Jaffna Fort is one of the most important colonial monuments in Sri Lanka and one of the largest forts in Asia. Originally built by the Portuguese in 1618 and substantially expanded by the Dutch in 1680, the pentagonal fort covers approximately 55 acres on the northern tip of Sri Lanka. Surrounded by a moat and the sea, its massive ramparts, bastions, and gateway remain largely intact. Following the end of the civil war, the fort is now fully accessible to visitors and has been undergoing significant restoration. The nearby Nallur Kandaswamy Kovil, the most important Hindu temple in northern Sri Lanka, and the vibrant Jaffna marketplace complete the cultural experience of the region.",
+    "location": {
+      "name": "Jaffna",
+      "district": "Jaffna",
+      "province": "Northern Province",
+      "country": "Sri Lanka",
+      "latitude": 9.6612,
+      "longitude": 80.0059
+    },
+    "images": {
+      "card": "/images/attractions/jaffna-fort-card.jpg",
+      "hero": "/images/attractions/jaffna-fort-hero.jpg",
+      "gallery": []
+    },
+    "openingHours": "8:00 AM – 6:00 PM",
+    "recommendedDuration": "1 – 2 hours",
+    "featured": false
+  },
+  {
+    "id": "heritance-kandalama",
+    "name": "Heritance Kandalama",
+    "category": "hotels",
+    "shortDescription": "Geoffrey Bawa's iconic eco-luxury hotel built into a granite cliff overlooking Kandalama Lake and Dambulla, surrounded by jungle.",
+    "description": "Heritance Kandalama is one of the most celebrated examples of tropical modern architecture in the world, designed by the legendary Sri Lankan architect Geoffrey Bawa and opened in 1994. The hotel is literally built into a sheer rock face, with jungle vegetation growing through its terraces and over its rooftops. From its cantilevered infinity pools and corridor walkways, guests enjoy uninterrupted views of Kandalama Lake and the distant silhouette of Sigiriya Rock. The property is LEED-certified and operates with a strong commitment to sustainability and conservation of its surrounding forest ecosystem. It is an hour's drive from both Sigiriya and Dambulla.",
+    "location": {
+      "name": "Kandalama, Dambulla",
+      "district": "Matale",
+      "province": "Central Province",
+      "country": "Sri Lanka",
+      "latitude": 7.8963,
+      "longitude": 80.6744
+    },
+    "images": {
+      "card": "/images/attractions/heritance-kandalama-card.jpg",
+      "hero": "/images/attractions/heritance-kandalama-hero.jpg",
+      "gallery": []
+    },
+    "featured": true
+  },
+  {
+    "id": "cape-weligama",
+    "name": "Cape Weligama",
+    "category": "hotels",
+    "shortDescription": "An exclusive clifftop resort on its own cape near Weligama Bay, with 39 private villas and views of stilt fishermen.",
+    "description": "Cape Weligama is an ultra-luxury resort perched on a dramatic rocky promontory on the southern coastline, surrounded on three sides by the Indian Ocean. The property's 39 private pool villas are designed in a contemporary Sri Lankan style and are built on different elevations of the cape, each with unobstructed ocean views. The position directly above Weligama Bay offers views of the traditional stilt fishermen for which this part of Sri Lanka is famous. The resort is home to three restaurants, three pools, a spa, and a direct beach access path. It is within easy reach of both Galle Fort and Mirissa's whale-watching boats.",
+    "location": {
+      "name": "Weligama",
+      "district": "Matara",
+      "province": "Southern Province",
+      "country": "Sri Lanka",
+      "latitude": 5.9758,
+      "longitude": 80.4201
+    },
+    "images": {
+      "card": "/images/attractions/cape-weligama-card.jpg",
+      "hero": "/images/attractions/cape-weligama-hero.jpg",
+      "gallery": []
+    },
+    "featured": false
+  },
+  {
+    "id": "tea-factory-hotel-nuwara-eliya",
+    "name": "The Tea Factory Hotel",
+    "category": "hotels",
+    "shortDescription": "A converted Victorian-era working tea factory transformed into a boutique hotel at 1,900 metres in the Nuwara Eliya highlands.",
+    "description": "The Tea Factory Hotel near Kandapola in the Nuwara Eliya district is a genuinely unique hospitality experience in Sri Lanka. The property is a fully restored Victorian tea factory, originally constructed in 1889, with the original industrial machinery preserved and displayed as art throughout the common areas. Set at 1,900 metres above sea level within a working 250-acre tea estate, the hotel offers walking trails through the surrounding tea bushes, plantation tours, and some of the most dramatic highland mist-and-mountain scenery in the country. The cool mountain air and the extraordinary heritage of the building combine to create an atmosphere unlike any other hotel in Sri Lanka.",
+    "location": {
+      "name": "Kandapola, Nuwara Eliya",
+      "district": "Nuwara Eliya",
+      "province": "Central Province",
+      "country": "Sri Lanka",
+      "latitude": 6.9583,
+      "longitude": 80.7539
+    },
+    "images": {
+      "card": "/images/attractions/tea-factory-hotel-card.jpg",
+      "hero": "/images/attractions/tea-factory-hotel-hero.jpg",
+      "gallery": []
+    },
+    "featured": false
+  }
+]
