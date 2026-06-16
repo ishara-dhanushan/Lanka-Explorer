@@ -1,17 +1,21 @@
-// src/app/components/ExploreClient.tsx
+// src/app/favorites/components/FavoritesClient.tsx
 "use client";
 
 import React, { useState, useMemo, useEffect, useCallback } from "react";
-import { ExploreHeader } from "./ExploreHeader";
 import { CategoryFilter } from "@components/shared/CategoryFilter";
 import { AttractionCard } from "@components/shared/AttractionCard";
 import type { Attraction } from "@typings/attraction";
 import type { Category } from "@typings/category";
 import { Input } from "@components/ui/Input";
 import { EmptyState } from "@components/ui/EmptyState";
+import { ErrorState } from "@components/ui/ErrorState";
 import { Skeleton } from "@components/ui/Skeleton";
+import { useFavoritesContext } from "@/components/providers/FavoritesProvider";
+import Link from "next/link";
 
-export function ExploreClient() {
+export function FavoritesClient() {
+  const { favoriteIds, isReady } = useFavoritesContext();
+
   const [attractions, setAttractions] = useState<Attraction[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
   const [loadingAttractions, setLoadingAttractions] = useState(true);
@@ -60,8 +64,14 @@ export function ExploreClient() {
     return () => clearTimeout(timer);
   }, [fetchAttractions, fetchCategories]);
 
+  // Filter: only favorited attractions
+  const favoriteAttractions = useMemo(() => {
+    return attractions.filter((a) => favoriteIds.includes(a.id));
+  }, [attractions, favoriteIds]);
+
+  // Apply search + category filters on top of favorites
   const filteredAttractions = useMemo(() => {
-    return attractions.filter((attraction) => {
+    return favoriteAttractions.filter((attraction) => {
       const matchesCategory = activeCategoryId
         ? attraction.category === activeCategoryId
         : true;
@@ -69,61 +79,64 @@ export function ExploreClient() {
 
       let matchesSearch = true;
       if (normalizedQuery) {
-        const nameMatch = attraction.name
-          .toLowerCase()
-          .includes(normalizedQuery);
-        const locNameMatch = attraction.location.name
-          .toLowerCase()
-          .includes(normalizedQuery);
-        const locDistrictMatch = attraction.location.district
-          .toLowerCase()
-          .includes(normalizedQuery);
-        const locProvinceMatch = attraction.location.province
-          .toLowerCase()
-          .includes(normalizedQuery);
-
-        matchesSearch =
-          nameMatch || locNameMatch || locDistrictMatch || locProvinceMatch;
+        const nameMatch = attraction.name.toLowerCase().includes(normalizedQuery);
+        const locNameMatch = attraction.location.name.toLowerCase().includes(normalizedQuery);
+        const locDistrictMatch = attraction.location.district.toLowerCase().includes(normalizedQuery);
+        const locProvinceMatch = attraction.location.province.toLowerCase().includes(normalizedQuery);
+        matchesSearch = nameMatch || locNameMatch || locDistrictMatch || locProvinceMatch;
       }
 
       return matchesCategory && matchesSearch;
     });
-  }, [attractions, activeCategoryId, searchQuery]);
+  }, [favoriteAttractions, activeCategoryId, searchQuery]);
 
-  const featuredAttractions = useMemo(() => {
-    return filteredAttractions.filter((a) => a.featured);
-  }, [filteredAttractions]);
-
-  const nonFeaturedAttractions = useMemo(() => {
-    return filteredAttractions.filter((a) => !a.featured);
-  }, [filteredAttractions]);
+  const isLoading = !isReady || loadingAttractions;
 
   if (errorAttractions) {
     return (
-      <div className="flex flex-col w-full pb-20 pt-10 px-6">
-        <EmptyState
-          heading="Attractions could not be loaded."
-          description={errorAttractions}
-        >
-          <button
-            onClick={() => window.location.reload()}
-            className="mt-4 px-6 py-3 bg-primary text-on-primary rounded-2xl font-semibold hover:bg-primary-dark transition-colors"
-          >
-            Retry
-          </button>
-        </EmptyState>
+      <div className="flex flex-col w-full pb-20 pt-10">
+        <ErrorState
+          message={errorAttractions}
+          onRetry={() => {
+            setErrorAttractions(null);
+            fetchAttractions();
+          }}
+        />
       </div>
     );
   }
 
   return (
     <div className="flex flex-col w-full pb-20">
-      <ExploreHeader />
+      {/* Header */}
+      <div className="px-6 pt-10 pb-6 flex flex-col gap-2">
+        <div className="flex items-center gap-2">
+          <span className="text-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-6 h-6"
+            >
+              <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+            </svg>
+          </span>
+          <h1 className="font-display font-bold text-2xl text-ink">My Favorites</h1>
+        </div>
+        <p className="font-sans text-sm text-ink-muted">
+          {isReady && !isLoading
+            ? favoriteAttractions.length === 0
+              ? "Save places you love to find them here"
+              : `${favoriteAttractions.length} saved ${favoriteAttractions.length === 1 ? "place" : "places"}`
+            : "Loading your saved places…"}
+        </p>
+      </div>
 
+      {/* Search */}
       <div className="px-6 mb-4">
         <Input
           type="search"
-          placeholder="Search destinations..."
+          placeholder="Search your favorites..."
           value={searchQuery}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setSearchQuery(e.target.value)
@@ -145,6 +158,7 @@ export function ExploreClient() {
         />
       </div>
 
+      {/* Category Filter */}
       {loadingCategories ? (
         <div className="px-6 flex gap-3 overflow-x-hidden pb-2 w-full">
           <Skeleton width="22%" height="2.5rem" rounded="rounded-full" />
@@ -160,18 +174,33 @@ export function ExploreClient() {
         />
       )}
 
-      <div className="px-6 mt-6 flex flex-col gap-8">
-        {loadingAttractions ? (
-          <div className="flex flex-col gap-6">
+      {/* Content */}
+      <div className="px-6 mt-6 flex flex-col gap-6">
+        {isLoading ? (
+          <>
             <Skeleton width="100%" height="12rem" rounded="rounded-2xl" />
             <Skeleton width="100%" height="12rem" rounded="rounded-2xl" />
             <Skeleton width="100%" height="12rem" rounded="rounded-2xl" />
+          </>
+        ) : favoriteAttractions.length === 0 ? (
+          <div className="mt-8">
+            <EmptyState
+              heading="No favorites yet"
+              description="Tap the heart on any attraction to save it here."
+            >
+              <Link
+                href="/"
+                className="mt-4 inline-block px-6 py-3 bg-primary text-on-primary rounded-2xl font-semibold hover:bg-primary-dark transition-colors"
+              >
+                Explore Attractions
+              </Link>
+            </EmptyState>
           </div>
         ) : filteredAttractions.length === 0 ? (
           <div className="mt-8">
             <EmptyState
-              heading="No attractions found"
-              description="Try adjusting your search or category filter to discover more places."
+              heading="No matches found"
+              description="Try adjusting your search or category filter."
             >
               <button
                 onClick={() => {
@@ -185,39 +214,11 @@ export function ExploreClient() {
             </EmptyState>
           </div>
         ) : (
-          <>
-            {featuredAttractions.length > 0 && (
-              <section className="flex flex-col gap-4">
-                <h2 className="text-xl font-bold font-display text-ink">
-                  Featured Destinations
-                </h2>
-                <div className="flex flex-col gap-6">
-                  {featuredAttractions.map((attraction) => (
-                    <AttractionCard
-                      key={attraction.id}
-                      attraction={attraction}
-                    />
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {nonFeaturedAttractions.length > 0 && (
-              <section className="flex flex-col gap-4">
-                <h2 className="text-xl font-bold font-display text-ink">
-                  All Destinations
-                </h2>
-                <div className="flex flex-col gap-6">
-                  {nonFeaturedAttractions.map((attraction) => (
-                    <AttractionCard
-                      key={attraction.id}
-                      attraction={attraction}
-                    />
-                  ))}
-                </div>
-              </section>
-            )}
-          </>
+          <div className="flex flex-col gap-6">
+            {filteredAttractions.map((attraction) => (
+              <AttractionCard key={attraction.id} attraction={attraction} />
+            ))}
+          </div>
         )}
       </div>
     </div>

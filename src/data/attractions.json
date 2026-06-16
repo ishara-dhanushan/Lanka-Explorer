@@ -11,7 +11,8 @@
       "province": "Central Province",
       "country": "Sri Lanka",
       "latitude": 7.957,
-      "longitude": 80.7603
+      "longitude": 80.7603,
+      "googleMapsUrl": "https://maps.app.goo.gl/CzTq9Z9gDBBk5eAr8"
     },
     "images": {
       "card": "/images/attractions/sigiriya-rock-fortress/card.jpg",
@@ -38,7 +39,8 @@
       "province": "Central Province",
       "country": "Sri Lanka",
       "latitude": 7.2936,
-      "longitude": 80.6413
+      "longitude": 80.6413,
+      "googleMapsUrl": "https://maps.app.goo.gl/7fqAtHCkvx2t44Bk7"
     },
     "images": {
       "card": "/images/attractions/temple-of-the-tooth/card.jpg",
@@ -65,7 +67,8 @@
       "province": "Southern Province",
       "country": "Sri Lanka",
       "latitude": 6.0269,
-      "longitude": 80.217
+      "longitude": 80.217,
+      "googleMapsUrl": "https://maps.app.goo.gl/7G6xc3jFmjU8fKL8A"
     },
     "images": {
       "card": "/images/attractions/galle-fort/card.png",
@@ -92,7 +95,8 @@
       "province": "Central Province",
       "country": "Sri Lanka",
       "latitude": 7.8567,
-      "longitude": 80.6492
+      "longitude": 80.6492,
+      "googleMapsUrl": "https://maps.app.goo.gl/vemRFhK8qszWz8ES6"
     },
     "images": {
       "card": "/images/attractions/dambulla-cave-temple/card.webp",
@@ -119,7 +123,8 @@
       "province": "North Central Province",
       "country": "Sri Lanka",
       "latitude": 7.9403,
-      "longitude": 81.0188
+      "longitude": 81.0188,
+      "googleMapsUrl": "https://maps.app.goo.gl/zEAmuNXaDZ1KT9TM6"
     },
     "images": {
       "card": "/images/attractions/polonnaruwa-ancient-city/card.jpg",
@@ -146,7 +151,8 @@
       "province": "North Central Province",
       "country": "Sri Lanka",
       "latitude": 8.3114,
-      "longitude": 80.4037
+      "longitude": 80.4037,
+      "googleMapsUrl": "https://maps.app.goo.gl/1VdjMF46BPRJK7q77"
     },
     "images": {
       "card": "/images/attractions/anuradhapura-sacred-city/card.jpg",
@@ -173,7 +179,8 @@
       "province": "Uva Province",
       "country": "Sri Lanka",
       "latitude": 6.8796,
-      "longitude": 81.056
+      "longitude": 81.056,
+      "googleMapsUrl": "https://maps.app.goo.gl/jyMDf1r9d3nrHL2LA"
     },
     "images": {
       "card": "/images/attractions/nine-arches-bridge-ella/card.jpg",
@@ -198,7 +205,8 @@
       "province": "Central Province",
       "country": "Sri Lanka",
       "latitude": 6.802,
-      "longitude": 80.807
+      "longitude": 80.807,
+      "googleMapsUrl": "https://maps.app.goo.gl/hNuMYx9eAa67Z3pZ9"
     },
     "images": {
       "card": "/images/attractions/horton-plains-worlds-end/card.webp",
@@ -225,7 +233,8 @@
       "province": "Sabaragamuwa Province",
       "country": "Sri Lanka",
       "latitude": 6.8096,
-      "longitude": 80.4994
+      "longitude": 80.4994,
+      "googleMapsUrl": "https://maps.app.goo.gl/mzAq7mq9kzS77hdUA"
     },
     "images": {
       "card": "/images/attractions/adams-peak/card.webp",
@@ -251,7 +260,8 @@
       "province": "Southern Province",
       "country": "Sri Lanka",
       "latitude": 6.3728,
-      "longitude": 81.5233
+      "longitude": 81.5233,
+      "googleMapsUrl": "https://maps.app.goo.gl/3BaZAnBFKNDipGxD7"
     },
     "images": {
       "card": "/images/attractions/yala-national-park/card.jpg",
@@ -278,7 +288,8 @@
       "province": "Uva Province",
       "country": "Sri Lanka",
       "latitude": 6.4737,
-      "longitude": 80.8997
+      "longitude": 80.8997,
+      "googleMapsUrl": "https://maps.app.goo.gl/rN76vZfpXdwsmS3g7"
     },
     "images": {
       "card": "/images/attractions/udawalawe-national-park/card.jpeg",
@@ -305,7 +316,8 @@
       "province": "North Central Province",
       "country": "Sri Lanka",
       "latitude": 8.027,
-      "longitude": 80.899
+      "longitude": 80.899,
+      "googleMapsUrl": "https://maps.app.goo.gl/Ma3f3F8wybuai4ed8"
     },
     "images": {
       "card": "/images/attractions/minneriya-national-park/card.avif",
@@ -332,7 +344,8 @@
       "province": "Southern Province",
       "country": "Sri Lanka",
       "latitude": 5.9487,
-      "longitude": 80.4711
+      "longitude": 80.4711,
+      "googleMapsUrl": "https://maps.app.goo.gl/Kx5JFX4wAwQgXrzr5"
     },
     "images": {
       "card": "/images/attractions/mirissa-beach/card.jpg",
@@ -358,7 +371,8 @@
       "province": "Southern Province",
       "country": "Sri Lanka",
       "latitude": 6.0108,
-      "longitude": 80.2491
+      "longitude": 80.2491,
+      "googleMapsUrl": "https://maps.app.goo.gl/QXXWrWbmyxA6SPLW6"
     },
     "images": {
       "card": "/images/attractions/unawatuna-beach/card.jpg",
@@ -384,7 +398,8 @@
       "province": "Eastern Province",
       "country": "Sri Lanka",
       "latitude": 6.8395,
-      "longitude": 81.835
+      "longitude": 81.835,
+      "googleMapsUrl": "https://maps.app.goo.gl/NziirHF7fohisPm7A"
     },
     "images": {
       "card": "/images/attractions/arugam-bay/card.webp",
@@ -410,7 +425,8 @@
       "province": "Southern Province",
       "country": "Sri Lanka",
       "latitude": 6.1396,
-      "longitude": 80.1069
+      "longitude": 80.1069,
+      "googleMapsUrl": "https://maps.app.goo.gl/TjqCCkXPCa7f6TqS6"
     },
     "images": {
       "card": "/images/attractions/hikkaduwa-coral-reef/card.jpg",
@@ -436,7 +452,8 @@
       "province": "Eastern Province",
       "country": "Sri Lanka",
       "latitude": 8.7274,
-      "longitude": 81.2021
+      "longitude": 81.2021,
+      "googleMapsUrl": "https://maps.app.goo.gl/yPBMAGbEfXBMvVJAA"
     },
     "images": {
       "card": "/images/attractions/pigeon-island/card.webp",
@@ -463,7 +480,8 @@
       "province": "Central Province",
       "country": "Sri Lanka",
       "latitude": 7.2683,
-      "longitude": 80.5956
+      "longitude": 80.5956,
+      "googleMapsUrl": "https://maps.app.goo.gl/pfs1KULnBkSzjLUaA"
     },
     "images": {
       "card": "/images/attractions/royal-botanical-gardens-peradeniya/card.jpg",
@@ -490,7 +508,8 @@
       "province": "Southern Province",
       "country": "Sri Lanka",
       "latitude": 6.4213,
-      "longitude": 79.996
+      "longitude": 79.996,
+      "googleMapsUrl": "https://maps.app.goo.gl/wu3gmiho7j2JSTP57"
     },
     "images": {
       "card": "/images/attractions/bentota-beach/card.jpg",
@@ -516,7 +535,8 @@
       "province": "Sabaragamuwa Province",
       "country": "Sri Lanka",
       "latitude": 7.2979,
-      "longitude": 80.3523
+      "longitude": 80.3523,
+      "googleMapsUrl": "https://maps.app.goo.gl/WqXtAsoShccAxARX9"
     },
     "images": {
       "card": "/images/attractions/pinnawala-elephant-orphanage/card.jpg",
@@ -543,7 +563,8 @@
       "province": "Western Province",
       "country": "Sri Lanka",
       "latitude": 6.917,
-      "longitude": 79.8559
+      "longitude": 79.8559,
+      "googleMapsUrl": "https://maps.app.goo.gl/Nb9MouS7pmDrRhP58"
     },
     "images": {
       "card": "/images/attractions/gangaramaya-temple-colombo/card.webp",
@@ -570,7 +591,8 @@
       "province": "Western Province",
       "country": "Sri Lanka",
       "latitude": 6.9271,
-      "longitude": 79.8612
+      "longitude": 79.8612,
+      "googleMapsUrl": "https://maps.app.goo.gl/Kd1vZFdm1W9ZyyWr5"
     },
     "images": {
       "card": "/images/attractions/colombo-lotus-tower/card.jpg",
@@ -597,7 +619,8 @@
       "province": "Northern Province",
       "country": "Sri Lanka",
       "latitude": 9.6612,
-      "longitude": 80.0059
+      "longitude": 80.0059,
+      "googleMapsUrl": "https://maps.app.goo.gl/qL9nAdeEjb2d8gXv5"
     },
     "images": {
       "card": "/images/attractions/jaffna-fort/card.jpg",
@@ -624,7 +647,8 @@
       "province": "Central Province",
       "country": "Sri Lanka",
       "latitude": 7.8963,
-      "longitude": 80.6744
+      "longitude": 80.6744,
+      "googleMapsUrl": "https://maps.app.goo.gl/3FY39XaX5skzBYyx7"
     },
     "images": {
       "card": "/images/attractions/heritance-kandalama/card.jpg",
@@ -649,7 +673,8 @@
       "province": "Southern Province",
       "country": "Sri Lanka",
       "latitude": 5.9758,
-      "longitude": 80.4201
+      "longitude": 80.4201,
+      "googleMapsUrl": "https://maps.app.goo.gl/8omLgqdFwyk37Tty7"
     },
     "images": {
       "card": "/images/attractions/cape-weligama/card.jpg",
@@ -674,7 +699,8 @@
       "province": "Central Province",
       "country": "Sri Lanka",
       "latitude": 6.9583,
-      "longitude": 80.7539
+      "longitude": 80.7539,
+      "googleMapsUrl": "https://maps.app.goo.gl/dGRxBBVP7h36yS1Z7"
     },
     "images": {
       "card": "/images/attractions/tea-factory-hotel-nuwara-eliya/card.jpg",
