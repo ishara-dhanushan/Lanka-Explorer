@@ -15,7 +15,6 @@ export type AttractionLocation = {
 /** All paths are relative to /public. */
 export type AttractionImages = {
   card: string;
-  hero: string;
   gallery: string[];
 };
 
