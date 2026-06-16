@@ -1,7 +1,7 @@
 // src/components/providers/FavoritesProvider.tsx
 "use client";
 
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState, useCallback } from "react";
 
 const FAVORITES_STORAGE_KEY = "lanka-explorer-favorites";
 
@@ -21,7 +21,7 @@ export function FavoritesProvider({ children }: { children: React.ReactNode }) {
   const [favoriteIds, setFavoriteIds] = useState<string[]>([]);
   const [isReady, setIsReady] = useState(false);
 
-  useEffect(() => {
+  const initFavorites = useCallback(() => {
     try {
       const stored = localStorage.getItem(FAVORITES_STORAGE_KEY);
       if (stored) {
@@ -37,6 +37,13 @@ export function FavoritesProvider({ children }: { children: React.ReactNode }) {
       setIsReady(true);
     }
   }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      initFavorites();
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [initFavorites]);
 
   const persistFavorites = (newFavorites: string[]) => {
     setFavoriteIds(newFavorites);

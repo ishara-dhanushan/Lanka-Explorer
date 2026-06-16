@@ -10,6 +10,7 @@ export type AttractionLocation = {
   country: string;
   latitude: number;
   longitude: number;
+  googleMapsUrl: string;
 };
 
 /** All paths are relative to /public. */
