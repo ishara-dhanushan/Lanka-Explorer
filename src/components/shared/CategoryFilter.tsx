@@ -17,7 +17,7 @@ export function CategoryFilter({
     <div className="flex gap-2 overflow-x-auto no-scrollbar px-6 py-4">
       <button
         onClick={() => onCategorySelect(null)}
-        className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
+        className={`px-4 py-2 rounded-full! text-sm font-medium transition-colors whitespace-nowrap ${
           activeCategoryId === null
             ? "bg-primary text-on-primary"
             : "bg-surface-container text-ink-muted hover:bg-surface-container-high hover:text-ink"
@@ -29,7 +29,7 @@ export function CategoryFilter({
         <button
           key={cat.id}
           onClick={() => onCategorySelect(cat.id)}
-          className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap ${
+          className={`px-4 py-2 rounded-full! text-sm font-medium transition-colors whitespace-nowrap ${
             activeCategoryId === cat.id
               ? "bg-primary text-on-primary"
               : "bg-surface-container text-ink-muted hover:bg-surface-container-high hover:text-ink"

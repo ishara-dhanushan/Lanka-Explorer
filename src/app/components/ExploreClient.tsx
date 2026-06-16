@@ -107,7 +107,7 @@ export function ExploreClient() {
         >
           <button
             onClick={() => window.location.reload()}
-            className="mt-4 px-6 py-3 bg-primary text-on-primary rounded-2xl font-semibold hover:bg-primary-dark transition-colors"
+            className="mt-4 px-6 py-3 bg-primary text-on-primary rounded-2xl! font-semibold hover:bg-primary-dark transition-colors"
           >
             Retry
           </button>
@@ -178,7 +178,7 @@ export function ExploreClient() {
                   setSearchQuery("");
                   setActiveCategoryId(null);
                 }}
-                className="mt-4 px-6 py-3 bg-primary text-on-primary rounded-2xl font-semibold hover:bg-primary-dark transition-colors"
+                className="mt-4 px-6 py-3 bg-primary text-on-primary rounded-2xl! font-semibold hover:bg-primary-dark transition-colors"
               >
                 Clear Filters
               </button>

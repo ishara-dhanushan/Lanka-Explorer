@@ -16,7 +16,7 @@ export function IconButton({
       type="button"
       className={`
         inline-flex items-center justify-center
-        min-h-12 min-w-12 rounded-full
+        min-h-12 min-w-12 rounded-full!
         transition-colors cursor-pointer
         hover:bg-surface-container
         focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary

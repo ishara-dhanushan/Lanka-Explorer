@@ -510,7 +510,7 @@ Required:
 Optional:
 
 - Small gallery count if gallery images exist.
-- Additional gallery thumbnails.
+- Additional gallery thumbnails. (Implemented as a horizontal `AttractionGallery` directly below the overview section).
 
 No image-upload capability.
 
@@ -566,7 +566,7 @@ Primary CTA:
 Open in Google Maps
 ```
 
-Use a standard link generated from coordinates.
+Use the `googleMapsUrl` defined in the attraction's static JSON data. Fall back to a standard link generated from coordinates if the URL is unavailable.
 
 The action should open a new tab and include safe external-link attributes.
 

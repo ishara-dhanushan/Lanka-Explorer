@@ -11,7 +11,7 @@ export default function NotFound() {
       >
         <Link
           href="/"
-          className="inline-flex items-center justify-center gap-2 font-semibold rounded-2xl transition-opacity hover:opacity-85 font-sans h-12 px-6 text-base bg-primary text-on-primary border-none"
+          className="inline-flex items-center justify-center gap-2 font-semibold rounded-2xl! transition-opacity hover:opacity-85 font-sans h-12 px-6 text-base bg-primary text-on-primary border-none"
         >
           Back to Explore
         </Link>
