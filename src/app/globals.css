@@ -181,6 +181,15 @@
 
 @variant dark (&:where(.dark, .dark *));
 
+/* Prevent hover state on mobile screens */
+@variant hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @slot;
+    }
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -188,6 +197,11 @@ body {
 }
 
 /* Heading font: Montserrat */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
 }
