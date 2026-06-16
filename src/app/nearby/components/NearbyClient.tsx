@@ -3,6 +3,7 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import { useUserLocation } from "@/hooks/useUserLocation";
+import { useProfile } from "@/hooks/useProfile";
 import { calculateDistanceKm } from "@/utils/distance";
 import type { Attraction } from "@typings/attraction";
 import type { DistanceResult } from "@typings/distance";
@@ -95,7 +96,7 @@ function LocationStatusCard({
           disabled={isRequesting}
           loading={isRequesting}
           onClick={onRequest}
-          className="self-start"
+          className="self-center"
         >
           {buttonLabel}
         </Button>
@@ -109,6 +110,7 @@ type AttractionWithDistance = Attraction & { distanceKm: number };
 export function NearbyClient() {
   const { status, coordinates, city, errorMessage, requestLocation } =
     useUserLocation();
+  const { profile } = useProfile();
 
   const [attractions, setAttractions] = useState<Attraction[]>([]);
   const [loadingAttractions, setLoadingAttractions] = useState(true);
@@ -294,7 +296,7 @@ export function NearbyClient() {
               key={attraction.id}
               attraction={attraction}
               distanceKm={attraction.distanceKm}
-              distanceUnit="km"
+              distanceUnit={profile.distanceUnit}
             />
           ))
         )}
