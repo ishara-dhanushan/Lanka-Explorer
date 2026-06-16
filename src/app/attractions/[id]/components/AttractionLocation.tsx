@@ -7,9 +7,10 @@ type AttractionLocationProps = {
 };
 
 export function AttractionLocation({ location }: AttractionLocationProps) {
-  const mapsUrl = location.googleMapsUrl && location.googleMapsUrl !== "#" 
-    ? location.googleMapsUrl 
-    : `https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}`;
+  const mapsUrl =
+    location.googleMapsUrl && location.googleMapsUrl !== "#"
+      ? location.googleMapsUrl
+      : `https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}`;
 
   return (
     <div className="flex flex-col gap-4 p-4 rounded-2xl bg-surface-container-low border border-outline-variant">
@@ -17,7 +18,9 @@ export function AttractionLocation({ location }: AttractionLocationProps) {
 
       <div className="flex flex-col gap-1 text-sm font-sans text-ink-muted">
         <p className="font-semibold text-ink">{location.name}</p>
-        <p>{location.district}, {location.province}</p>
+        <p>
+          {location.district}, {location.province}
+        </p>
         <p>{location.country}</p>
       </div>
 
@@ -25,7 +28,7 @@ export function AttractionLocation({ location }: AttractionLocationProps) {
         href={mapsUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-primary text-on-primary font-semibold font-sans text-sm transition-colors hover:bg-primary-dark active:scale-[0.98]"
+        className="flex items-center justify-center gap-2 w-full py-3 rounded-xl! bg-primary text-on-primary font-semibold font-sans text-sm transition-colors hover:bg-primary-dark active:scale-[0.98]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -79,7 +79,7 @@ export function AttractionDetailClient({ id }: AttractionDetailClientProps) {
         >
           <Link
             href="/"
-            className="mt-4 inline-block px-6 py-3 bg-primary text-on-primary rounded-2xl font-semibold hover:bg-primary-dark transition-colors"
+            className="mt-4 inline-block px-6 py-3 bg-primary text-on-primary rounded-2xl! font-semibold hover:bg-primary-dark transition-colors"
           >
             Back to Explore
           </Link>
@@ -91,10 +91,7 @@ export function AttractionDetailClient({ id }: AttractionDetailClientProps) {
   if (error) {
     return (
       <div className="flex flex-col flex-1 items-center justify-center w-full pb-20">
-        <ErrorState
-          message={error}
-          onRetry={fetchAttraction}
-        />
+        <ErrorState message={error} onRetry={fetchAttraction} />
       </div>
     );
   }

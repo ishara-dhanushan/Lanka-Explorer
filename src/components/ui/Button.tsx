@@ -38,7 +38,7 @@ export function Button({
       aria-busy={loading}
       className={`
         inline-flex items-center justify-center gap-2 font-semibold
-        rounded-2xl cursor-pointer transition-opacity
+        rounded-2xl! cursor-pointer transition-opacity
         focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary
         disabled:opacity-50 disabled:cursor-not-allowed
         hover:opacity-85 font-sans

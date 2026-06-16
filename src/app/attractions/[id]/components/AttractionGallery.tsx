@@ -7,7 +7,10 @@ type AttractionGalleryProps = {
   attractionName: string;
 };
 
-export function AttractionGallery({ images, attractionName }: AttractionGalleryProps) {
+export function AttractionGallery({
+  images,
+  attractionName,
+}: AttractionGalleryProps) {
   if (!images || images.length === 0) return null;
 
   return (
