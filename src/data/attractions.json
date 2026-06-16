@@ -14,9 +14,13 @@
       "longitude": 80.7603
     },
     "images": {
-      "card": "/images/attractions/sigiriya-card.jpg",
-      "hero": "/images/attractions/sigiriya-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/sigiriya-rock-fortress/card.jpg",
+      "gallery": [
+        "/images/attractions/sigiriya-rock-fortress/gallery-1.jpg",
+        "/images/attractions/sigiriya-rock-fortress/gallery-2.jpg",
+        "/images/attractions/sigiriya-rock-fortress/gallery-3.webp",
+        "/images/attractions/sigiriya-rock-fortress/gallery-4.jpg"
+      ]
     },
     "openingHours": "7:00 AM – 5:30 PM",
     "recommendedDuration": "3 – 4 hours",
@@ -37,9 +41,13 @@
       "longitude": 80.6413
     },
     "images": {
-      "card": "/images/attractions/temple-tooth-card.jpg",
-      "hero": "/images/attractions/temple-tooth-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/temple-of-the-tooth/card.jpg",
+      "gallery": [
+        "/images/attractions/temple-of-the-tooth/gallery-1.jpg",
+        "/images/attractions/temple-of-the-tooth/gallery-2.jpg",
+        "/images/attractions/temple-of-the-tooth/gallery-3.jpg",
+        "/images/attractions/temple-of-the-tooth/gallery-4.webp"
+      ]
     },
     "openingHours": "6:00 AM – 8:00 PM",
     "recommendedDuration": "1 – 2 hours",
@@ -60,9 +68,13 @@
       "longitude": 80.217
     },
     "images": {
-      "card": "/images/attractions/galle-fort-card.jpg",
-      "hero": "/images/attractions/galle-fort-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/galle-fort/card.png",
+      "gallery": [
+        "/images/attractions/galle-fort/gallery-1.jpg",
+        "/images/attractions/galle-fort/gallery-2.jpg",
+        "/images/attractions/galle-fort/gallery-3.webp",
+        "/images/attractions/galle-fort/gallery-4.png"
+      ]
     },
     "openingHours": "Open 24 hours",
     "recommendedDuration": "2 – 3 hours",
@@ -83,9 +95,13 @@
       "longitude": 80.6492
     },
     "images": {
-      "card": "/images/attractions/dambulla-card.jpg",
-      "hero": "/images/attractions/dambulla-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/dambulla-cave-temple/card.webp",
+      "gallery": [
+        "/images/attractions/dambulla-cave-temple/gallery-1.webp",
+        "/images/attractions/dambulla-cave-temple/gallery-2.jpg",
+        "/images/attractions/dambulla-cave-temple/gallery-3.jpg",
+        "/images/attractions/dambulla-cave-temple/gallery-4.jpg"
+      ]
     },
     "openingHours": "7:30 AM – 5:30 PM",
     "recommendedDuration": "2 – 3 hours",
@@ -106,9 +122,13 @@
       "longitude": 81.0188
     },
     "images": {
-      "card": "/images/attractions/polonnaruwa-card.jpg",
-      "hero": "/images/attractions/polonnaruwa-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/polonnaruwa-ancient-city/card.jpg",
+      "gallery": [
+        "/images/attractions/polonnaruwa-ancient-city/gallery-1.jpg",
+        "/images/attractions/polonnaruwa-ancient-city/gallery-2.jpg",
+        "/images/attractions/polonnaruwa-ancient-city/gallery-3.webp",
+        "/images/attractions/polonnaruwa-ancient-city/gallery-4.jpg"
+      ]
     },
     "openingHours": "7:00 AM – 6:00 PM",
     "recommendedDuration": "4 – 5 hours",
@@ -129,9 +149,13 @@
       "longitude": 80.4037
     },
     "images": {
-      "card": "/images/attractions/anuradhapura-card.jpg",
-      "hero": "/images/attractions/anuradhapura-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/anuradhapura-sacred-city/card.jpg",
+      "gallery": [
+        "/images/attractions/anuradhapura-sacred-city/gallery-1.jpg",
+        "/images/attractions/anuradhapura-sacred-city/gallery-2.jpg",
+        "/images/attractions/anuradhapura-sacred-city/gallery-3.webp",
+        "/images/attractions/anuradhapura-sacred-city/gallery-4.jpg"
+      ]
     },
     "openingHours": "Open 24 hours (museums close at 6:00 PM)",
     "recommendedDuration": "5 – 6 hours",
@@ -152,9 +176,12 @@
       "longitude": 81.056
     },
     "images": {
-      "card": "/images/attractions/nine-arches-card.jpg",
-      "hero": "/images/attractions/nine-arches-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/nine-arches-bridge-ella/card.jpg",
+      "gallery": [
+        "/images/attractions/nine-arches-bridge-ella/gallery-1.webp",
+        "/images/attractions/nine-arches-bridge-ella/gallery-2.webp",
+        "/images/attractions/nine-arches-bridge-ella/gallery-3.jpg"
+      ]
     },
     "recommendedDuration": "1 – 2 hours",
     "featured": true
@@ -174,9 +201,13 @@
       "longitude": 80.807
     },
     "images": {
-      "card": "/images/attractions/horton-plains-card.jpg",
-      "hero": "/images/attractions/horton-plains-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/horton-plains-worlds-end/card.webp",
+      "gallery": [
+        "/images/attractions/horton-plains-worlds-end/gallery-1.webp",
+        "/images/attractions/horton-plains-worlds-end/gallery-2.webp",
+        "/images/attractions/horton-plains-worlds-end/gallery-3.jpg",
+        "/images/attractions/horton-plains-worlds-end/gallery-4.webp"
+      ]
     },
     "openingHours": "6:00 AM – 6:00 PM",
     "recommendedDuration": "3 – 4 hours",
@@ -197,9 +228,13 @@
       "longitude": 80.4994
     },
     "images": {
-      "card": "/images/attractions/adams-peak-card.jpg",
-      "hero": "/images/attractions/adams-peak-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/adams-peak/card.webp",
+      "gallery": [
+        "/images/attractions/adams-peak/gallery-1.jpg",
+        "/images/attractions/adams-peak/gallery-2.jpg",
+        "/images/attractions/adams-peak/gallery-3.jpg",
+        "/images/attractions/adams-peak/gallery-4.jpeg"
+      ]
     },
     "recommendedDuration": "6 – 8 hours (overnight climb)",
     "featured": true
@@ -219,9 +254,13 @@
       "longitude": 81.5233
     },
     "images": {
-      "card": "/images/attractions/yala-card.jpg",
-      "hero": "/images/attractions/yala-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/yala-national-park/card.jpg",
+      "gallery": [
+        "/images/attractions/yala-national-park/gallery-1.jpg",
+        "/images/attractions/yala-national-park/gallery-2.webp",
+        "/images/attractions/yala-national-park/gallery-3.jpg",
+        "/images/attractions/yala-national-park/gallery-4.jpg"
+      ]
     },
     "openingHours": "6:00 AM – 6:00 PM",
     "recommendedDuration": "3 – 4 hours per safari",
@@ -242,9 +281,13 @@
       "longitude": 80.8997
     },
     "images": {
-      "card": "/images/attractions/udawalawe-card.jpg",
-      "hero": "/images/attractions/udawalawe-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/udawalawe-national-park/card.jpeg",
+      "gallery": [
+        "/images/attractions/udawalawe-national-park/gallery-1.jpg",
+        "/images/attractions/udawalawe-national-park/gallery-2.jpg",
+        "/images/attractions/udawalawe-national-park/gallery-3.jpg",
+        "/images/attractions/udawalawe-national-park/gallery-4.jpg"
+      ]
     },
     "openingHours": "6:00 AM – 6:00 PM",
     "recommendedDuration": "3 hours per safari",
@@ -265,9 +308,13 @@
       "longitude": 80.899
     },
     "images": {
-      "card": "/images/attractions/minneriya-card.jpg",
-      "hero": "/images/attractions/minneriya-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/minneriya-national-park/card.avif",
+      "gallery": [
+        "/images/attractions/minneriya-national-park/gallery-1.webp",
+        "/images/attractions/minneriya-national-park/gallery-2.jpg",
+        "/images/attractions/minneriya-national-park/gallery-3.jpg",
+        "/images/attractions/minneriya-national-park/gallery-4.jpg"
+      ]
     },
     "openingHours": "6:00 AM – 6:00 PM",
     "recommendedDuration": "2 – 3 hours per safari",
@@ -288,9 +335,13 @@
       "longitude": 80.4711
     },
     "images": {
-      "card": "/images/attractions/mirissa-card.jpg",
-      "hero": "/images/attractions/mirissa-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/mirissa-beach/card.jpg",
+      "gallery": [
+        "/images/attractions/mirissa-beach/gallery-1.webp",
+        "/images/attractions/mirissa-beach/gallery-2.png",
+        "/images/attractions/mirissa-beach/gallery-3.jpg",
+        "/images/attractions/mirissa-beach/gallery-4.jpg"
+      ]
     },
     "recommendedDuration": "Half to full day",
     "featured": true
@@ -310,9 +361,13 @@
       "longitude": 80.2491
     },
     "images": {
-      "card": "/images/attractions/unawatuna-card.jpg",
-      "hero": "/images/attractions/unawatuna-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/unawatuna-beach/card.jpg",
+      "gallery": [
+        "/images/attractions/unawatuna-beach/gallery-1.jpg",
+        "/images/attractions/unawatuna-beach/gallery-2.jpg",
+        "/images/attractions/unawatuna-beach/gallery-3.jpg",
+        "/images/attractions/unawatuna-beach/gallery-4.jpg"
+      ]
     },
     "recommendedDuration": "Half to full day",
     "featured": false
@@ -332,9 +387,13 @@
       "longitude": 81.835
     },
     "images": {
-      "card": "/images/attractions/arugam-bay-card.jpg",
-      "hero": "/images/attractions/arugam-bay-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/arugam-bay/card.webp",
+      "gallery": [
+        "/images/attractions/arugam-bay/gallery-1.jpg",
+        "/images/attractions/arugam-bay/gallery-2.jpg",
+        "/images/attractions/arugam-bay/gallery-3.png",
+        "/images/attractions/arugam-bay/gallery-4.webp"
+      ]
     },
     "recommendedDuration": "1 – 3 days",
     "featured": false
@@ -354,9 +413,13 @@
       "longitude": 80.1069
     },
     "images": {
-      "card": "/images/attractions/hikkaduwa-card.jpg",
-      "hero": "/images/attractions/hikkaduwa-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/hikkaduwa-coral-reef/card.jpg",
+      "gallery": [
+        "/images/attractions/hikkaduwa-coral-reef/gallery-1.webp",
+        "/images/attractions/hikkaduwa-coral-reef/gallery-2.jpg",
+        "/images/attractions/hikkaduwa-coral-reef/gallery-3.avif",
+        "/images/attractions/hikkaduwa-coral-reef/gallery-4.webp"
+      ]
     },
     "recommendedDuration": "Half to full day",
     "featured": false
@@ -376,9 +439,13 @@
       "longitude": 81.2021
     },
     "images": {
-      "card": "/images/attractions/pigeon-island-card.jpg",
-      "hero": "/images/attractions/pigeon-island-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/pigeon-island/card.webp",
+      "gallery": [
+        "/images/attractions/pigeon-island/gallery-1.jpg",
+        "/images/attractions/pigeon-island/gallery-2.jpg",
+        "/images/attractions/pigeon-island/gallery-3.webp",
+        "/images/attractions/pigeon-island/gallery-4.webp"
+      ]
     },
     "openingHours": "6:00 AM – 6:00 PM",
     "recommendedDuration": "3 – 4 hours",
@@ -399,9 +466,13 @@
       "longitude": 80.5956
     },
     "images": {
-      "card": "/images/attractions/peradeniya-gardens-card.jpg",
-      "hero": "/images/attractions/peradeniya-gardens-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/royal-botanical-gardens-peradeniya/card.jpg",
+      "gallery": [
+        "/images/attractions/royal-botanical-gardens-peradeniya/gallery-1.jpg",
+        "/images/attractions/royal-botanical-gardens-peradeniya/gallery-2.jpg",
+        "/images/attractions/royal-botanical-gardens-peradeniya/gallery-3.webp",
+        "/images/attractions/royal-botanical-gardens-peradeniya/gallery-4.webp"
+      ]
     },
     "openingHours": "7:30 AM – 5:00 PM",
     "recommendedDuration": "2 – 3 hours",
@@ -422,9 +493,13 @@
       "longitude": 79.996
     },
     "images": {
-      "card": "/images/attractions/bentota-card.jpg",
-      "hero": "/images/attractions/bentota-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/bentota-beach/card.jpg",
+      "gallery": [
+        "/images/attractions/bentota-beach/gallery-1.webp",
+        "/images/attractions/bentota-beach/gallery-2.avif",
+        "/images/attractions/bentota-beach/gallery-3.webp",
+        "/images/attractions/bentota-beach/gallery-4.jpg"
+      ]
     },
     "recommendedDuration": "Half to full day",
     "featured": false
@@ -444,9 +519,13 @@
       "longitude": 80.3523
     },
     "images": {
-      "card": "/images/attractions/pinnawala-card.jpg",
-      "hero": "/images/attractions/pinnawala-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/pinnawala-elephant-orphanage/card.jpg",
+      "gallery": [
+        "/images/attractions/pinnawala-elephant-orphanage/gallery-1.jpg",
+        "/images/attractions/pinnawala-elephant-orphanage/gallery-2.webp",
+        "/images/attractions/pinnawala-elephant-orphanage/gallery-3.webp",
+        "/images/attractions/pinnawala-elephant-orphanage/gallery-4.jpg"
+      ]
     },
     "openingHours": "8:30 AM – 5:30 PM",
     "recommendedDuration": "2 – 3 hours",
@@ -467,9 +546,13 @@
       "longitude": 79.8559
     },
     "images": {
-      "card": "/images/attractions/gangaramaya-card.jpg",
-      "hero": "/images/attractions/gangaramaya-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/gangaramaya-temple-colombo/card.webp",
+      "gallery": [
+        "/images/attractions/gangaramaya-temple-colombo/gallery-1.webp",
+        "/images/attractions/gangaramaya-temple-colombo/gallery-2.jpg",
+        "/images/attractions/gangaramaya-temple-colombo/gallery-3.webp",
+        "/images/attractions/gangaramaya-temple-colombo/gallery-4.avif"
+      ]
     },
     "openingHours": "6:00 AM – 10:00 PM",
     "recommendedDuration": "1 – 2 hours",
@@ -490,9 +573,13 @@
       "longitude": 79.8612
     },
     "images": {
-      "card": "/images/attractions/lotus-tower-card.jpg",
-      "hero": "/images/attractions/lotus-tower-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/colombo-lotus-tower/card.jpg",
+      "gallery": [
+        "/images/attractions/colombo-lotus-tower/gallery-1.png",
+        "/images/attractions/colombo-lotus-tower/gallery-2.webp",
+        "/images/attractions/colombo-lotus-tower/gallery-3.jpg",
+        "/images/attractions/colombo-lotus-tower/gallery-4.jpg"
+      ]
     },
     "openingHours": "9:00 AM – 10:00 PM",
     "recommendedDuration": "1 – 2 hours",
@@ -513,9 +600,13 @@
       "longitude": 80.0059
     },
     "images": {
-      "card": "/images/attractions/jaffna-fort-card.jpg",
-      "hero": "/images/attractions/jaffna-fort-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/jaffna-fort/card.jpg",
+      "gallery": [
+        "/images/attractions/jaffna-fort/gallery-1.jpg",
+        "/images/attractions/jaffna-fort/gallery-2.webp",
+        "/images/attractions/jaffna-fort/gallery-3.jpg",
+        "/images/attractions/jaffna-fort/gallery-4.jpg"
+      ]
     },
     "openingHours": "8:00 AM – 6:00 PM",
     "recommendedDuration": "1 – 2 hours",
@@ -536,9 +627,13 @@
       "longitude": 80.6744
     },
     "images": {
-      "card": "/images/attractions/heritance-kandalama-card.jpg",
-      "hero": "/images/attractions/heritance-kandalama-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/heritance-kandalama/card.jpg",
+      "gallery": [
+        "/images/attractions/heritance-kandalama/gallery-1.jpg",
+        "/images/attractions/heritance-kandalama/gallery-2.jpg",
+        "/images/attractions/heritance-kandalama/gallery-3.jpg",
+        "/images/attractions/heritance-kandalama/gallery-4.jpg"
+      ]
     },
     "featured": true
   },
@@ -557,9 +652,13 @@
       "longitude": 80.4201
     },
     "images": {
-      "card": "/images/attractions/cape-weligama-card.jpg",
-      "hero": "/images/attractions/cape-weligama-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/cape-weligama/card.jpg",
+      "gallery": [
+        "/images/attractions/cape-weligama/gallery-1.jpg",
+        "/images/attractions/cape-weligama/gallery-2.jpg",
+        "/images/attractions/cape-weligama/gallery-3.jpg",
+        "/images/attractions/cape-weligama/gallery-4.jpg"
+      ]
     },
     "featured": false
   },
@@ -578,9 +677,13 @@
       "longitude": 80.7539
     },
     "images": {
-      "card": "/images/attractions/tea-factory-hotel-card.jpg",
-      "hero": "/images/attractions/tea-factory-hotel-hero.jpg",
-      "gallery": []
+      "card": "/images/attractions/tea-factory-hotel-nuwara-eliya/card.jpg",
+      "gallery": [
+        "/images/attractions/tea-factory-hotel-nuwara-eliya/gallery-1.jpg",
+        "/images/attractions/tea-factory-hotel-nuwara-eliya/gallery-2.jpg",
+        "/images/attractions/tea-factory-hotel-nuwara-eliya/gallery-3.jpg",
+        "/images/attractions/tea-factory-hotel-nuwara-eliya/gallery-4.jpg"
+      ]
     },
     "featured": false
   }

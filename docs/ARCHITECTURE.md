@@ -90,41 +90,46 @@ lanka-explorer/
 │   │   ├── attractions/
 │   │   │   └── [id]/
 │   │   │       ├── page.tsx
-│   │   │       ├── AttractionDetailClient.tsx
-│   │   │       ├── AttractionHero.tsx
-│   │   │       ├── AttractionOverview.tsx
-│   │   │       ├── AttractionQuickInfo.tsx
-│   │   │       ├── AttractionLocation.tsx
-│   │   │       ├── WeatherSection.tsx
-│   │   │       └── RelatedAttractions.tsx
+│   │   │       └── components/
+│   │   │           ├── AttractionDetailClient.tsx
+│   │   │           ├── AttractionHero.tsx
+│   │   │           ├── AttractionOverview.tsx
+│   │   │           ├── AttractionQuickInfo.tsx
+│   │   │           ├── AttractionLocation.tsx
+│   │   │           ├── WeatherSection.tsx
+│   │   │           └── RelatedAttractions.tsx
 │   │   │
 │   │   ├── favorites/
 │   │   │   ├── page.tsx
-│   │   │   ├── FavoritesClient.tsx
-│   │   │   └── FavoritesGrid.tsx
+│   │   │   └── components/
+│   │   │       ├── FavoritesClient.tsx
+│   │   │       └── FavoritesGrid.tsx
 │   │   │
 │   │   ├── nearby/
 │   │   │   ├── page.tsx
-│   │   │   ├── NearbyClient.tsx
-│   │   │   ├── LocationStatusCard.tsx
-│   │   │   └── NearbyAttractionsList.tsx
+│   │   │   └── components/
+│   │   │       ├── NearbyClient.tsx
+│   │   │       ├── LocationStatusCard.tsx
+│   │   │       └── NearbyAttractionsList.tsx
 │   │   │
 │   │   ├── profile/
 │   │   │   ├── page.tsx
-│   │   │   ├── ProfileClient.tsx
-│   │   │   ├── ProfileForm.tsx
-│   │   │   ├── DistanceUnitSetting.tsx
-│   │   │   ├── ThemeSetting.tsx
-│   │   │   └── ClearFavoritesAction.tsx
+│   │   │   └── components/
+│   │   │       ├── ProfileClient.tsx
+│   │   │       ├── ProfileForm.tsx
+│   │   │       ├── DistanceUnitSetting.tsx
+│   │   │       ├── ThemeSetting.tsx
+│   │   │       └── ClearFavoritesAction.tsx
 │   │   │
 │   │   ├── layout.tsx
 │   │   ├── globals.css
 │   │   ├── page.tsx
-│   │   ├── ExploreClient.tsx
-│   │   ├── ExploreHeader.tsx
-│   │   ├── AttractionSearch.tsx
-│   │   ├── FeaturedAttractions.tsx
-│   │   └── AttractionsSection.tsx
+│   │   └── components/
+│   │       ├── ExploreClient.tsx
+│   │       ├── ExploreHeader.tsx
+│   │       ├── AttractionSearch.tsx
+│   │       ├── FeaturedAttractions.tsx
+│   │       └── AttractionsSection.tsx
 │   │
 │   ├── components/
 │   │   ├── layout/
@@ -164,9 +169,6 @@ lanka-explorer/
 │   │   └── categories.json
 │   │
 │   ├── hooks/
-│   │   ├── useAttraction.ts
-│   │   ├── useAttractions.ts
-│   │   ├── useCategories.ts
 │   │   ├── useFavorites.ts
 │   │   ├── useLocalStorage.ts
 │   │   ├── usePreferences.ts
@@ -206,26 +208,28 @@ This is a planned structure, not a requirement to create every file before it is
 
 ## 4. Route-Level Colocation
 
-Route-specific components stay inside the folder of the route that owns them.
+Route-specific components stay inside a `components/` subfolder of the route that owns them.
 
 Examples:
 
 ```text
 src/app/favorites/
 ├── page.tsx
-├── FavoritesClient.tsx
-└── FavoritesGrid.tsx
+└── components/
+    ├── FavoritesClient.tsx
+    └── FavoritesGrid.tsx
 ```
 
 ```text
 src/app/attractions/[id]/
 ├── page.tsx
-├── AttractionDetailClient.tsx
-├── AttractionHero.tsx
-└── WeatherSection.tsx
+└── components/
+    ├── AttractionDetailClient.tsx
+    ├── AttractionHero.tsx
+    └── WeatherSection.tsx
 ```
 
-A component should move to `src/components` only when it is genuinely used by multiple routes or represents a global application concern.
+A component should move to `src/components/shared/` only when it is genuinely used by multiple routes or represents a global application concern.
 
 ### 4.1 Global shared examples
 
@@ -656,35 +660,9 @@ Do not hide data loading behind unnecessary abstraction. The helper should remai
 
 ## 13. Client Data Hooks
 
-Shared hooks are appropriate because multiple routes need the same patterns.
+Shared hooks are appropriate because multiple routes need the same patterns. Simple data fetching should be inlined in components unless reused heavily.
 
-### 13.1 `useAttractions`
-
-Responsibilities:
-
-- Fetch `/api/attractions`.
-- Expose `data`, `loading`, and `error`.
-- Abort the request on unmount.
-- Avoid state updates after unmount.
-- Normalize unexpected responses.
-
-### 13.2 `useAttraction`
-
-Responsibilities:
-
-- Accept an attraction ID.
-- Fetch `/api/attractions/[id]`.
-- Distinguish not-found from general failure.
-- Expose retry if implemented.
-
-### 13.3 `useCategories`
-
-Responsibilities:
-
-- Fetch `/api/categories`.
-- Return categories for filters.
-
-### 13.4 `useWeather`
+### 13.1 `useWeather`
 
 Responsibilities:
 

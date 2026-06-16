@@ -1,5 +1,4 @@
 // src/components/ui/Skeleton.tsx
-
 export type SkeletonProps = {
   width?: string;
   height?: string;
