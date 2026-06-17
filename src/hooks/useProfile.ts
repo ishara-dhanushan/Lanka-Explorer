@@ -23,8 +23,7 @@ export function useProfile() {
   const [profile, setProfileState] = useState<ProfileData>(defaultProfile);
   const [isReady, setIsReady] = useState(false);
 
-  // Load from local storage on mount
-  useEffect(() => {
+  const loadProfile = useCallback(() => {
     const stored = localStorage.getItem(PROFILE_STORAGE_KEY);
     if (stored) {
       try {
@@ -40,6 +39,14 @@ export function useProfile() {
     }
     setIsReady(true);
   }, []);
+
+  // Load from local storage on mount
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      loadProfile();
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [loadProfile]);
 
   // Update profile and sync to local storage
   const updateProfile = useCallback((updates: Partial<ProfileData>) => {
