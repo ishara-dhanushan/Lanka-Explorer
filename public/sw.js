@@ -1,4 +1,4 @@
-const CACHE_NAME = "lanka-explorer-cache-v1";
+const CACHE_NAME = "lanka-explorer-cache-v2";
 const OFFLINE_URL = "/";
 
 self.addEventListener("install", (event) => {
@@ -7,8 +7,7 @@ self.addEventListener("install", (event) => {
       return cache.addAll([
         OFFLINE_URL,
         "/manifest.json",
-        "/icons/icon-192x192.png",
-        "/icons/icon-512x512.png",
+        "/icons/favicon.png",
       ]);
     })
   );
