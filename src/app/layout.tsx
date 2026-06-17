@@ -4,6 +4,8 @@ import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import { AppProviders } from "@/components/providers/AppProviders";
 import { AppShell } from "@/components/layout/AppShell";
+import { PwaRegister } from "@/components/pwa/PwaRegister";
+import { PwaInstallPrompt } from "@/components/pwa/PwaInstallPrompt";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -26,6 +28,16 @@ export const metadata: Metadata = {
   },
   description:
     "Discover the best attractions, nature spots, and heritage sites across Sri Lanka.",
+  manifest: "/manifest.json",
+  icons: {
+    icon: "/icons/favicon.png",
+    apple: "/icons/favicon.png",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Lanka Explorer",
+  },
 };
 
 export const viewport: Viewport = {
@@ -33,6 +45,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
+  themeColor: "#14b8a6",
 };
 
 export default function RootLayout({
@@ -46,6 +59,8 @@ export default function RootLayout({
       className={`${montserrat.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-surface-container-low text-ink">
+        <PwaRegister />
+        <PwaInstallPrompt />
         <AppProviders>
           <div className="mx-auto w-full max-w-md bg-surface min-h-screen shadow-2xl flex flex-col relative">
             <AppShell>{children}</AppShell>

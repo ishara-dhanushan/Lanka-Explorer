@@ -4,6 +4,7 @@
 import React, { useState, useRef } from "react";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { useProfile } from "@/hooks/useProfile";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useFavoritesContext } from "@/components/providers/FavoritesProvider";
@@ -67,11 +68,18 @@ export function ProfileClient() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Sync state when hook is ready
-  React.useEffect(() => {
+  const syncNameInput = React.useCallback(() => {
     if (isReady) {
       setNameInput(profile.displayName);
     }
   }, [isReady, profile.displayName]);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      syncNameInput();
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [syncNameInput]);
 
   // Handle escape key to close modal
   React.useEffect(() => {
@@ -150,11 +158,13 @@ export function ProfileClient() {
         <div className="bg-surface-container-low border border-outline-variant rounded-2xl p-5 sm:p-6 flex flex-col gap-6">
           <div className="flex flex-col items-center gap-4 pb-6 border-b border-outline-variant/60">
             <div className="relative group">
-              <div className="w-24 h-24 rounded-full! overflow-hidden bg-surface-container border-2 border-outline-variant flex items-center justify-center text-ink-muted shadow-sm">
+              <div className="w-24 h-24 rounded-full! overflow-hidden bg-surface-container border-2 border-outline-variant flex items-center justify-center text-ink-muted shadow-sm relative">
                 {profile.profileImage ? (
-                  <img
+                  <Image
                     src={profile.profileImage}
                     alt="Profile"
+                    width={256}
+                    height={256}
                     className="w-full h-full object-cover"
                   />
                 ) : (

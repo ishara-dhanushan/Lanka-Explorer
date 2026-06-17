@@ -1,0 +1,21 @@
+{
+  "name": "Lanka Explorer",
+  "short_name": "LankaExplr",
+  "description": "Discover the best attractions, nature spots, and heritage sites across Sri Lanka.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#14b8a6",
+  "icons": [
+    {
+      "src": "/icons/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
