@@ -190,6 +190,33 @@
   }
 }
 
+/* Custom Scrollbar Styles for Desktop */
+@media (hover: hover) and (pointer: fine) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-surface-container);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-outline);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-on-surface-variant);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-outline) var(--color-surface-container);
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
