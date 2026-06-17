@@ -14,6 +14,7 @@ import { ErrorState } from "@components/ui/ErrorState";
 import { Skeleton } from "@components/ui/Skeleton";
 
 const NEARBY_LIMIT = 15;
+const SESSION_CACHE_KEY = "nearby_backup";
 
 function LocationPinIcon({ className }: { className?: string }) {
   return (
@@ -122,6 +123,88 @@ export function NearbyClient() {
   >([]);
   const [loadingDistances, setLoadingDistances] = useState(false);
 
+  // Caching Layer
+  const [isRestoredFromCache, setIsRestoredFromCache] = useState(false);
+  const [hasCheckedCache, setHasCheckedCache] = useState(false);
+  const [cachedCity, setCachedCity] = useState<string | null>(null);
+  const [cachedCoordinates, setCachedCoordinates] = useState<{
+    latitude: number;
+    longitude: number;
+  } | null>(null);
+
+  const initCache = useCallback(() => {
+    try {
+      const backup = sessionStorage.getItem(SESSION_CACHE_KEY);
+      if (backup) {
+        const parsed = JSON.parse(backup);
+        if (parsed.nearbyAttractions && parsed.nearbyAttractions.length > 0) {
+          setNearbyAttractions(parsed.nearbyAttractions);
+          setCachedCity(parsed.city);
+          setCachedCoordinates(parsed.coordinates);
+          setIsRestoredFromCache(true);
+          setLoadingAttractions(false);
+        }
+      }
+    } catch (err) {
+      console.error("Failed to parse nearby backup", err);
+    } finally {
+      setHasCheckedCache(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      initCache();
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [initCache]);
+
+  const effectiveStatus = isRestoredFromCache ? "success" : status;
+  const effectiveCity = isRestoredFromCache ? cachedCity : city;
+  const effectiveCoordinates = isRestoredFromCache
+    ? cachedCoordinates
+    : coordinates;
+  const effectiveErrorMessage = isRestoredFromCache ? null : errorMessage;
+
+  const handleRequestLocation = useCallback(() => {
+    if (isRestoredFromCache) {
+      setIsRestoredFromCache(false);
+      setNearbyAttractions([]);
+      setCachedCity(null);
+      setCachedCoordinates(null);
+      try {
+        sessionStorage.removeItem(SESSION_CACHE_KEY);
+      } catch (err) {
+        console.error("Failed to remove session cache", err);
+      }
+    }
+    requestLocation();
+  }, [isRestoredFromCache, requestLocation]);
+  // Persist to cache whenever we have a fully processed list
+  useEffect(() => {
+    if (isRestoredFromCache) return;
+    if (nearbyAttractions.length > 0 && effectiveCoordinates) {
+      try {
+        sessionStorage.setItem(
+          SESSION_CACHE_KEY,
+          JSON.stringify({
+            city: effectiveCity,
+            coordinates: effectiveCoordinates,
+            nearbyAttractions,
+          })
+        );
+      } catch (err) {
+        console.error("Failed to backup to session storage", err);
+      }
+    }
+  }, [
+    nearbyAttractions,
+    effectiveCoordinates,
+    effectiveCity,
+    isRestoredFromCache,
+  ]);
+
+  // If data is not cached, fetch all attractions
   const fetchAttractions = useCallback(async () => {
     try {
       setLoadingAttractions(true);
@@ -142,15 +225,21 @@ export function NearbyClient() {
 
   // Strict Mode-safe fetch: setTimeout prevents the double-call from React 18
   useEffect(() => {
+    if (!hasCheckedCache) return;
+    if (isRestoredFromCache) {
+      return;
+    }
+
     const timer = setTimeout(() => {
       fetchAttractions();
     }, 0);
     return () => clearTimeout(timer);
-  }, [fetchAttractions]);
+  }, [fetchAttractions, hasCheckedCache, isRestoredFromCache]);
 
   // Two-pass distance calculation whenever both attractions and coordinates are ready
   useEffect(() => {
-    if (!coordinates || attractions.length === 0) return;
+    if (isRestoredFromCache) return;
+    if (!effectiveCoordinates || attractions.length === 0) return;
 
     const run = async () => {
       setLoadingDistances(true);
@@ -160,8 +249,8 @@ export function NearbyClient() {
         .map((a) => ({
           ...a,
           distanceKm: calculateDistanceKm(
-            coordinates.latitude,
-            coordinates.longitude,
+            effectiveCoordinates.latitude,
+            effectiveCoordinates.longitude,
             a.location.latitude,
             a.location.longitude
           ),
@@ -175,8 +264,8 @@ export function NearbyClient() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            originLat: coordinates.latitude,
-            originLng: coordinates.longitude,
+            originLat: effectiveCoordinates.latitude,
+            originLng: effectiveCoordinates.longitude,
             destinations: withHaversine.map((a) => ({
               id: a.id,
               lat: a.location.latitude,
@@ -226,7 +315,7 @@ export function NearbyClient() {
     };
 
     run();
-  }, [coordinates, attractions]);
+  }, [effectiveCoordinates, attractions, isRestoredFromCache]);
 
   if (errorAttractions) {
     return (
@@ -256,7 +345,7 @@ export function NearbyClient() {
           <h1 className="font-display font-bold text-2xl text-ink">Nearby</h1>
         </div>
         <p className="font-sans text-sm text-ink-muted">
-          {status === "success" && !isLoadingList
+          {effectiveStatus === "success" && !isLoadingList
             ? `${displayCount} attraction${displayCount !== 1 ? "s" : ""} sorted by distance`
             : "Discover attractions close to you"}
         </p>
@@ -265,10 +354,10 @@ export function NearbyClient() {
       {/* Location status card */}
       <div className="px-6 mb-6">
         <LocationStatusCard
-          status={status}
-          city={city}
-          errorMessage={errorMessage}
-          onRequest={requestLocation}
+          status={effectiveStatus}
+          city={effectiveCity}
+          errorMessage={effectiveErrorMessage}
+          onRequest={handleRequestLocation}
         />
       </div>
 
@@ -280,7 +369,7 @@ export function NearbyClient() {
             <Skeleton width="100%" height="12rem" rounded="rounded-2xl" />
             <Skeleton width="100%" height="12rem" rounded="rounded-2xl" />
           </>
-        ) : status !== "success" ? (
+        ) : effectiveStatus !== "success" ? (
           <EmptyState
             heading="Enable Location to Sort by Distance"
             description="Tap 'Use My Location' above to see the closest attractions first."
