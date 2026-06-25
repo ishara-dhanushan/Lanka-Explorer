@@ -1,7 +1,13 @@
 // src/components/providers/FavoritesProvider.tsx
 "use client";
 
-import React, { createContext, useContext, useEffect, useState, useCallback } from "react";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useCallback,
+} from "react";
 
 const FAVORITES_STORAGE_KEY = "lanka-explorer-favorites";
 

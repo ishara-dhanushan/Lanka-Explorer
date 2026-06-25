@@ -1,0 +1,39 @@
+name: Lanka Explorer CI build check
+
+on:
+  push:
+    branches:
+      - "main"
+      - "feature/**"
+      - "fix/**"
+
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  ci-checks:
+    name: Code Quality and Build Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Format Check
+        run: npm run format:check
+
+      - name: Run lint check
+        run: npm run lint
+
+      - name: Build application
+        run: npm run build

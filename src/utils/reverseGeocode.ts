@@ -25,7 +25,12 @@ export async function reverseGeocode(
     const data: BigDataCloudResponse = await res.json();
 
     // Prefer city → locality → principalSubdivision (state/province)
-    return data.city || data.locality || data.principalSubdivision || "Current location";
+    return (
+      data.city ||
+      data.locality ||
+      data.principalSubdivision ||
+      "Current location"
+    );
   } catch {
     // Network failure or parse error — fail silently and use the fallback
     return "Current location";
