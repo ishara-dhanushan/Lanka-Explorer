@@ -46,6 +46,17 @@ Open attractions directly in Google Maps for navigation.
 
 View current weather information for attraction locations using Open-Meteo.
 
+### Search & Discovery
+
+Search for attractions by name or location to quickly find specific destinations.
+
+### Profile & Preferences
+
+Manage your user preferences locally, including:
+
+- **Theme Selection:** Toggle between Light and Dark mode.
+- **Distance Units:** Choose between Kilometers and Miles for nearby calculations.
+
 ## Technology Stack
 
 ### Frontend
@@ -72,13 +83,25 @@ View current weather information for attraction locations using Open-Meteo.
 ## Project Structure
 
 ```text
-src/
-├── app/
-├── components/
-├── hooks/
-├── lib/
-├── types/
-└── data/
+Lanka-Explorer/
+├── docs/                # Project documentation (Architecture, Implementation Plan, Overview)
+├── public/              # Static assets
+├── src/                 # Source code
+│   ├── app/             # Next.js app directory (routes, api, layouts, pages)
+│   │   ├── api/         # API routes
+│   │   ├── attractions/ # Attractions page route
+│   │   ├── favorites/   # Favorites page route
+│   │   ├── nearby/      # Nearby attractions page route
+│   │   └── profile/     # User profile page route
+│   ├── components/      # Global reusable React components
+│   ├── contexts/        # React Context providers (e.g., FavoritesProvider)
+│   ├── data/            # Static application data
+│   ├── hooks/           # Custom React hooks (e.g., geolocation)
+│   ├── types/           # TypeScript definitions
+│   └── utils/           # Utility functions and helpers
+├── next.config.ts       # Next.js configuration
+├── tailwind.config.ts   # Tailwind CSS configuration (if applicable)
+└── package.json         # Project metadata, dependencies, and scripts
 ```
 
 ## Getting Started
